@@ -1,0 +1,108 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #E7E7E7;
+}
+
+:root {
+  --primary-color: #0E625F;
+  --secondary-color: ;
+  --normal-font: ;
+  --bold-font: ;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+}
+.container img {
+  height: 24rem;
+}
+.container div {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 23px;
+  color: #2d2d2d;
+  text-align: center;
+}
+.container button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 12px;
+  padding: 19px 74px;
+  text-align: center;
+  border-style: none;
+  height: 72px;
+  gap: 10px;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    height: 33rem;
+  }
+  .container img {
+    height: 14rem;
+  }
+  .container div {
+    font-size: 0.8rem;
+    line-height: 17px;
+  }
+  .container button {
+    padding: 16px 23px;
+    height: 52px;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    height: 33rem;
+  }
+  .container img {
+    height: 17rem;
+  }
+  .container div {
+    font-size: 1rem;
+    line-height: 21px;
+  }
+  .container button {
+    padding: 16px 32px;
+    height: 52px;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    height: 33rem;
+  }
+  .container img {
+    height: 17rem;
+  }
+  .container div {
+    font-size: 1rem;
+    line-height: 21px;
+  }
+  .container button {
+    padding: 16px 34px;
+    height: 52px;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=check_mail.css.map */
