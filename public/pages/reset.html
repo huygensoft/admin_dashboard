@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="../css/sign_board/formReset.css">
+
+     <!-- Favicons -->
+     <link rel="icon" href="../images/favicon16.ico" sizes="16x16" type="image/x-icon">
+     <link rel="icon" href="../images/favicon32.ico" sizes="32x32" type="image/x-icon">
+ 
+      <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/54e6ce874c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-left-container">
+                <div class="grid-left">
+                    <div class="grid-image-container">
+                        <img src="../images/booksrite_white.svg" alt="Booksrite logo" class="grid-image">
+                        <div class="grid-image-tag">BOOKSRITE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-right-container">
+                <div class="grid-right">
+                    <h2>Reset your Password</h2>
+                    <p>Enter a New Password to fully Recover your account</p>
+                    <form action="">
+
+                        <div class="form-label">Password</div>
+                        <input type="password" name="" placeholder="Enter New Password" class="input" id="input-password-1">
+                        <i class="fa-solid fa-eye eye-icon" id="show-password-1" onclick="toggle()"> </i>
+
+                       
+                        <br><br>
+                        <div class="form-label">Confirm Password</div>
+                        <input type="password" name="" id="input-password-2" placeholder="Confirm New Password" class="input">
+                        <i class="fa-solid fa-eye eye-icon" id="show-password-2" onclick="toggle_2()"> </i>
+
+                        
+                        <input type="submit" value="Recover  Account" class="form-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+    
+        let state = false;
+        function toggle() {
+    if(state) {
+        document.getElementById("input-password-1").setAttribute("type", "password");
+        document.getElementById("show-password-1").style.color = "#b4b3b6";
+
+        state = false;
+    }else {
+        document.getElementById("input-password-1").setAttribute("type", "text");
+        document.getElementById("show-password-1").style.color = "#0E625F";
+
+        state = true;
+    }
+} 
+
+    function toggle_2() {
+    if(state) {
+        document.getElementById("input-password-2").setAttribute("type", "password");
+        document.getElementById("show-password-2").style.color = "#b4b3b6";
+
+        state = false;
+    }else {
+        document.getElementById("input-password-2").setAttribute("type", "text");
+        document.getElementById("show-password-2").style.color = "#0E625F";
+
+        state = true;
+    }
+}
+    </script>
+</body>
+</html>

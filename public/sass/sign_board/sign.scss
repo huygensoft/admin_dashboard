@@ -106,6 +106,12 @@ body {
         margin: 0px 2rem;
         margin-block-start: 9rem;
     }
+    .input {
+        width: 81%;
+    }
+    .grid-right-forgot {
+        margin-right: 2.1rem;
+    }
 }
 
 
@@ -123,5 +129,15 @@ body {
     .grid-right {
         margin: 0 5rem;
         margin-block-start: 9rem;
+    }
+}
+
+//Large Screen
+@media screen and (min-width: 1440px) {
+    .input {
+        width: 79%;
+    }
+    .grid-right-forgot {
+        margin-right: 3.4rem;
     }
 }
