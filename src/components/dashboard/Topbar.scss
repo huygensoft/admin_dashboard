@@ -1,7 +1,9 @@
+$primary-color: #0E625F;
+
 .top-bar {
     width: 100%;
     height: 50px;
-    background-color: azure;
+    background-color: white;
 }
 .topbar-container {
     height: 100%;
@@ -9,4 +11,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.topbar-logo {
+    height: 2rem;
+}
+.top-logo-tag {
+    font-weight: 400;
+    font-size: 22px;
+    color: $primary-color;
 }
