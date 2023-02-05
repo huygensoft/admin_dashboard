@@ -1,4 +1,112 @@
+$primary-color: #0E625F;
+
+
+
 .dashboard {
+    display: grid;
+    grid-template-columns: 12rem auto;
+    grid-template-rows: 4rem 40rem;
+    padding: 0.7rem;
+    padding-top: 0;
+    height: 100vh;
+    background-color: #E7E7E7;
     
-    
+}
+.side {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    position: fixed;
+    background-color: #FFFFFF;
+    height: 47rem;
+    // width: 74%;
+    // border: 1px solid black;
+}
+.topbar {
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    position: fixed;
+    top: 0;
+    left: 12rem;
+    width: 87%;
+    // height: 4rem;
+    // border: 1px solid black;
+}
+.main {
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    // height: 40rem;
+    // border: 1px solid black;
+}
+// .footer {
+//     grid-row: 3 / 4;
+//     grid-column: 2 / 4;
+//     height: 3rem;
+//     border: 1px solid black;
+//     align-self: end;
+//     width: 84.5%;
+//     position: fixed;
+//     left: 13rem;
+
+// }
+.side-top {
+    display: flex;
+    padding-block-start: 1rem;
+    padding-left: 1rem;
+
+}
+.top-logo {
+    height: 1.99rem;
+}
+.top-logo-tag {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: $primary-color;
+    margin-top: 0.6rem;
+    margin-left: 0.2rem;
+}
+.sidebar-menu {
+    padding: 1rem;
+    margin-top: 4.2rem;
+}
+.sidebar-list {
+    list-style: none;
+    margin-block-start: 0px;
+    margin-inline-start: 0;
+    padding-inline-start: 0;
+}
+.sidebar-list-item {
+    padding: 15px 5px;
+    cursor: pointer;
+    align-items: center;
+    // border-radius: 10px;
+    font-size: 0.9rem;
+    color: #69737C;
+    font-weight: 400;
+    display: flex;
+}
+.link {
+    text-decoration: none;
+    color: #69737C;
+}
+// .link.active, .link:hover {
+//     color: $primary-color;
+// }
+.sidebar-list-item.active, .sidebar-list-item:hover {
+    background-color: rgb(240, 240, 255);
+    // color: $primary-color;
+    color: red;
+    border-right: 5px solid $primary-color;
+    font-weight: 600;
+}
+
+.sidebar-icon {
+    margin-right: 5px;
+    font-size: 20px !important;
+    // color: $primary-color;
+    margin-top: 0;
+}
+.sidebar-title {
+    font-size: 0.9rem;
+    color: #69737C;
+    font-weight: 600;
 }
