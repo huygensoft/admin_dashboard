@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route, NavLink } from 'react-router-dom'
 import './Dashboard.scss';
 import Topbar from './Topbar';
 import logo from './logo.svg';
@@ -30,47 +30,47 @@ function Dashboard() {
 
       {/* Sidebar */}
         <div className='side'>
-        <div className='side-top'>
-                <img src={logo} alt='Booksrites logo' className='top-logo'/>
-                <div className='top-logo-tag'>Booksrite</div>
-        </div>
-        <div className='sidebar-menu'>
-          <ul className='sidebar-list'>
-              <li className='sidebar-list-item'> <Link to='/' className='link'>
-                  <GridViewIcon className='sidebar-icon'/>Overview</Link>
-              </li>
-              <li className='sidebar-list-item'> <Link to='/user' className='link'>
-                  <PeopleAltIcon className='sidebar-icon'/> Users</Link>
-              </li>
-              <li className='sidebar-list-item'> <Link to='/books' className='link'>
-                  <LibraryBooksIcon className='sidebar-icon'/>Books</Link>
-              </li>
-              <li className='sidebar-list-item'> <Link to='/writers' className='link'>
-                  <HistoryEduIcon className='sidebar-icon'/>Writers</Link>
-              </li>
-              <li className='sidebar-list-item'> <Link to='/readers' className='link'>
-                  <LocalLibraryIcon className='sidebar-icon'/>Readers</Link>
-              </li>
-          </ul>
+            <div className='side-top'>
+                    <img src={logo} alt='Booksrites logo' className='top-logo'/>
+                    <div className='top-logo-tag'>Booksrite</div>
+            </div>
+            <div className='sidebar-menu'>
+              <ul className='sidebar-list'>
+                  <li className='sidebar-list-item'> <NavLink to='/' className='link'>
+                      <GridViewIcon className='sidebar-icon'/>Overview</NavLink>
+                  </li>
+                  <li className='sidebar-list-item'> <NavLink to='/user' className='link'>
+                      <PeopleAltIcon className='sidebar-icon'/> Users</NavLink>
+                  </li>
+                  <li className='sidebar-list-item'> <NavLink to='/books' className='link'>
+                      <LibraryBooksIcon className='sidebar-icon'/>Books</NavLink>
+                  </li>
+                  <li className='sidebar-list-item'> <NavLink to='/writers' className='link'>
+                      <HistoryEduIcon className='sidebar-icon'/>Writers</NavLink>
+                  </li>
+                  <li className='sidebar-list-item'> <NavLink to='/readers' className='link'>
+                      <LocalLibraryIcon className='sidebar-icon'/>Readers</NavLink>
+                  </li>
+              </ul>
 
-            <h3 className='sidebar-title'>Other Categories</h3>
-  
+                <h3 className='sidebar-title'>Other Categories</h3>
+      
 
-           <ul className='sidebar-list'>
-                <li className='sidebar-list-item'> <Link to='/earnings' className='link'>
-                    <LocalAtmIcon className='sidebar-icon'/>Earnings</Link>
-                </li>
-                <li className='sidebar-list-item'> <Link to='/forum' className='link'>
-                    <ForumIcon className='sidebar-icon'/>Community Forum</Link>
-                </li>
-                <li className='sidebar-list-item'> <Link to='/blog' className='link'>
-                    <NewspaperIcon className='sidebar-icon'/>Blog</Link>
-                </li>
-                <li className='sidebar-list-item'> <Link to='/reports' className='link'>
-                    <ReportGmailerrorredIcon className='sidebar-icon'/>Reports</Link>
-                </li>
-          </ul>
-        </div>
+              <ul className='sidebar-list'>
+                    <li className='sidebar-list-item'> <NavLink to='/earnings' className='link'>
+                        <LocalAtmIcon className='sidebar-icon'/>Earnings</NavLink>
+                    </li>
+                    <li className='sidebar-list-item'> <NavLink to='/forum' className='link'>
+                        <ForumIcon className='sidebar-icon'/>Community Forum</NavLink>
+                    </li>
+                    <li className='sidebar-list-item'> <NavLink to='/blog' className='link'>
+                        <NewspaperIcon className='sidebar-icon'/>Blog</NavLink>
+                    </li>
+                    <li className='sidebar-list-item'> <NavLink to='/reports' className='link'>
+                        <ReportGmailerrorredIcon className='sidebar-icon'/>Reports</NavLink>
+                    </li>
+              </ul>
+            </div>
         </div>
 
         {/* Topbar */}
