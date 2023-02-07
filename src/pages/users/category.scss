@@ -1,0 +1,31 @@
+.category {
+    background: #fff;
+    border-radius: 15px;
+    height: 196px;
+    padding: 20px 10px;
+
+}
+.category-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #828282;
+    margin-block-end: 15px;
+    margin-left: 27px;
+}
+.category-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -13px;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.6px solid #CCCCCC;
+    width: 16%;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+.item-word {
+    // text-align: center;
+}

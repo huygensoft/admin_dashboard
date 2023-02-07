@@ -1,9 +1,11 @@
 import React from 'react'
 import './gender.scss'
-import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar'
-// import 'react-circular-progressbar/dist/styles.css';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar'
+import 'react-circular-progressbar/dist/styles.css';
 
-const percent = 60;
+const green = 75;
+const blue = 64;
+const yellow = 34;
 
 export default function Gender() {
   return (
@@ -12,36 +14,38 @@ export default function Gender() {
            <h3> Gender Distribution</h3>
            
            <div className='left'>
-                <CircularProgressbarWithChildren
-                    value={percent} 
-                    strokeWidth={5}
-                    text={`${percent}%`}
-                    style={ buildStyles({
-                        stroke: `red`,
-                        strokeLinecap: 'butt',
-                        pathColor: `red`,
-                        textColor: 'red',
-                        trailColor: 'red',
-                        backgroundColor: 'red'
-                    })}
-                    className='circ'>
-                        <div className='inner-text'> mate</div>
-                    </CircularProgressbarWithChildren>
-
-                    <CircularProgressbarWithChildren
+                <div className='text-position path-green'>
+                    <CircularProgressbar
+                        value={green}
+                        strokeWidth={5}
+                        percentage={green}
+                        text={`${green}%`}
+                        style={ buildStyles({
+                            pathColor: `rgba(14, 98, 95, ${blue / 100})`,
+                            strokeLinecap: 'butt',
+                            textColor: 'red',
+                            trailColor: 'red',
+                            backgroundColor: 'red'
+                        })}
+                        className='circ' />
+                    <div className='inner-text'>Male</div>
+                </div>
+                    
+                <div className='text-position'>
+                    <CircularProgressbar
                     className='circ'
-                    value={percent} 
+                    value={blue} 
                     strokeWidth={5}
-                    text={`${percent}%`}
+                    text={`${blue}%`}
                     style={ buildStyles({
                         
-                        pathColor: `rgba(62, 152, 199, ${percent / 100})`,
+                        pathColor: `rgba(62, 152, 199, ${blue / 100})`,
                         textColor: '#f88',
                         trailColor: '#d6d6d6',
                         backgroundColor: '#3e98c7'
-                    })}>
-                        <div className='inner-text'> mate</div>
-                    </CircularProgressbarWithChildren>
+                    })} />
+                    <div className='inner-text'>Female</div>
+                </div>
            </div>
              
         </div>
@@ -51,50 +55,56 @@ export default function Gender() {
             <h3>Corporate Distribution</h3>
 
             <div className='right'>
-                <CircularProgressbarWithChildren
-                className='circ'
-                value={percent} 
-                strokeWidth={5}
-                text={`${percent}%`}
-                style={ buildStyles({
-                    
-                    pathColor: `rgba(62, 152, 199, ${percent / 100})`,
-                    textColor: '#f88',
-                    trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7'
-                })}>
-                <div className='inner-text'>mate</div>
-            </CircularProgressbarWithChildren>
+
+                 <div className='text-position path-green'>
+                    <CircularProgressbar
+                    className='circ'
+                    value={green} 
+                    strokeWidth={5}
+                    text={`${green}%`}
+                    style={ buildStyles({
+                        stroke: 'blue',
+                        pathColor: `red`,
+                        textColor: '#f88',
+                        trailColor: '#d6d6d6',
+                        backgroundColor: '#3e98c7'
+                    })} 
+                    />
+                    <div className='inner-text'>Readers</div>
+                </div>
             
-            <CircularProgressbarWithChildren
-            className='circ'
-            value={percent} 
-            strokeWidth={5}
-            text={`${percent}%`}
-            style={ buildStyles({
-                
-                pathColor: `rgba(62, 152, 199, ${percent / 100})`,
-                textColor: '#f88',
-                trailColor: '#d6d6d6',
-                backgroundColor: '#3e98c7'
-            })}>
-                <div className='inner-text'>mate</div>
-            </CircularProgressbarWithChildren>
-            
-            <CircularProgressbarWithChildren 
-                className='circ'
-                value={percent} 
-                strokeWidth={5}
-                text={`${percent}%`}
-                style={ buildStyles({
-                    
-                    pathColor: `rgba(62, 152, 199, ${percent / 100})`,
-                    textColor: '#f88',
-                    trailColor: '#d6d6d6',
-                    backgroundColor: '#3e98c7'
-                })}>
-                 <div className='inner-text'>mate</div>
-            </CircularProgressbarWithChildren>
+                <div className='text-position'>
+                    <CircularProgressbar
+                    className='circ'
+                    value={blue} 
+                    strokeWidth={5}
+                    text={`${blue}%`}
+                    style={ buildStyles({
+                        
+                        pathColor: `rgba(62, 152, 199, ${blue / 100})`,
+                        textColor: '#f88',
+                        trailColor: '#d6d6d6',
+                        backgroundColor: '#3e98c7'
+                    })} />
+                    <div className='inner-text'>Writers</div>
+                </div>
+        
+                <div className='text-position'>
+                    <CircularProgressbar
+                        className='circ'
+                        value={yellow} 
+                        strokeWidth={5}
+                        text={`${yellow}%`}
+                        style={ buildStyles({
+                            
+                            pathColor: `rgba(62, 152, 111, ${yellow / 100})`,
+                            textColor: '#f88',
+                            trailColor: '#d6d6d6',
+                            backgroundColor: '#3e98c7'
+                        })} />
+                        <div className='inner-text'>Invalid</div>
+                </div>
+        
             </div>
         </div>
     </div>
