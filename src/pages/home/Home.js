@@ -2,7 +2,7 @@ import React from 'react'
 import './home.scss'
 import Info from './Info'
 import Chart from './Chart'
-import Gender from './Gender'
+import Progressbar from './Progressbar'
 import NewUser from './NewUser'
 import Footer from './Footer'
 
@@ -17,7 +17,8 @@ export default function Home() {
 
         <Info />
         <Chart />
-        <Gender />
+        <Progressbar />
+        <div className='NewUser-title'>Newly Registered Users</div>
         <NewUser />
         <Footer />
 

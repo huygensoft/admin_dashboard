@@ -6,9 +6,9 @@ export default function Books() {
   return (
     <div className='container'>
 
-        <div className='header'>
-            <h3 className='header-title'>Books </h3>
-            <span className='header-tag'>All Users in Booksrite Platform</span>
+        <div className='title'>
+            <h3 className='title-salute'>Books </h3>
+            <span className='title-tag'>All Users in Booksrite Platform</span>
         </div>
 
         {/* <Cates />
