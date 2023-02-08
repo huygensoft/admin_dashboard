@@ -29,12 +29,24 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
         },
         {
           name: 'Writers',
-          user: 6780,
+          user: 8780,
           books: 3908,
           amt: 2200,
         },
         {
           name: 'Readers',
+          user: 1890,
+          books: 4800,
+          amt: 2181,
+        },
+        {
+          name: 'none',
+          user: 1890,
+          books: 4800,
+          amt: 2181,
+        },
+        {
+          name: 'none',
           user: 1890,
           books: 4800,
           amt: 2181,
@@ -58,10 +70,10 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
           </LineChart>
         </ResponsiveContainer> */}
 
-        <ResponsiveContainer width="80%" height="100%">
+        <ResponsiveContainer width="90%" height="120%">
         <LineChart
           width={500}
-          height={500}
+          height={700}
           data={data}
           margin={{
             top: 5,
@@ -74,7 +86,12 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
+          <Legend width={100} height={150}
+            wrapperStyle={{ top: 5, 
+              right: -100, backgroundColor: '#f5f5f5', 
+              border: '1px solid #d5d5d5', borderRadius: 3, 
+              lineHeight: '40px' }}
+          />
           <Line type="monotone" dataKey="books" stroke="#0E625F" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="user" stroke="#F37273" />
         </LineChart>

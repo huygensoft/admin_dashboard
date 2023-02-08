@@ -21,6 +21,17 @@ $primary-color: #0E625F;
   font-size: 1.2rem;
   font-weight: 500;
 }
+.top-right {
+  // border: 1px solid black;
+  margin-right: 2rem;
+}
+.notification {
+  font-size: 2.2rem;
+}
+.user-image {
+margin-right: 12px;
+height: 1.9rem;
+}
 .search {
     position: relative;
     background:  #f0f1f6;
@@ -58,10 +69,4 @@ $primary-color: #0E625F;
     border-style: none;
     // transform: translateY(-50%);
   }
-  .notification {
-    font-size: 2.2rem;
-  }
-.user-image {
-  margin-right: 12px;
-  height: 1.9rem;
-}
+  
