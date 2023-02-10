@@ -16,6 +16,7 @@ import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 // Pages
 import Home from '../../pages/home/Home'
 import User from '../../pages/users/User'
+import Profile from '../../pages/users/Profile';
 import Books from '../../pages/books/Books'
 import Writers from '../../pages/writers/Writers'
 import Readers from '../../pages/readers/Readers'
@@ -23,6 +24,13 @@ import Earnings from '../../pages/earnings/Earnings'
 import Forum from '../../pages/forum/Forum'
 import Blog from '../../pages/blog/Blog'
 import Reports from '../../pages/reports/Reports'
+
+// Profile Pages
+import Basic from '../../pages/users/Basic'
+import Resident from '../../pages/users/Resident'
+import Job from '../../pages/users/Job'
+import Financial from '../../pages/users/Financial'
+import Invoice from '../../pages/users/Invoice';
 
 function Dashboard() {
   return (
@@ -83,6 +91,13 @@ function Dashboard() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/user' element={<User />} />
+            <Route path='/user/:profileId' element={<Profile />} >
+                <Route path='basic' element={<Basic />} />
+                <Route path='resident' element={<Resident />} />
+                <Route path='job' element={<Job />} />
+                <Route path='financial' element={<Financial />} />
+                <Route path='invoice' element={<Invoice />} />
+            </Route>  
             <Route path='/books' element={<Books />} />
             <Route path='/writers' element={<Writers />} />
             <Route path='/readers' element={<Readers />} />

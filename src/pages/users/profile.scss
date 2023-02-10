@@ -1,0 +1,76 @@
+$primary-color: #0E625F;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.profile {
+    margin: 0 auto;
+    height: 54rem;
+    width: 97%;
+}
+.arrow {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.detail-container {
+    background: #fff;
+    height: 35rem;
+    border-radius: 16px;
+    margin-block-start: 92px;
+    padding: 0 2rem;
+    position: relative;
+}
+.detail-container img {
+    height: 5rem;
+    position: absolute;
+    top: -34px;
+}
+.detail-name-container {
+    padding-block-start: 80px;
+
+}
+.user-name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+}
+.user-email, nav {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #828282;
+}
+nav {
+    margin-top: 49px;
+    margin-left: -12px;
+}
+nav a {
+    color: #69737C;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 18px;
+}
+nav a.active {
+    text-decoration: none;
+    color: $primary-color;
+    border-bottom: 5px solid $primary-color;
+    border-bottom-width: 6%;
+    font-weight: 600;
+    padding-bottom: 12px;
+    z-index: 1;
+}
+.basic, .resident, .job, .finance, .invoice {
+    padding-top: 20px;
+    background: #FAFAFA;
+    height: 20rem;
+    border-radius: 16px;
+    margin-top: 48px;
+}
