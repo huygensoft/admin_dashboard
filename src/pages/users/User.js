@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Category from './Category'
 import Chart from '../home/Chart'
 import Table from './Table'
 import Footer from '../home/Footer'
+import profiles from '../../components/profile'
 import './user.scss'
 
 export default function User() {
@@ -24,6 +26,24 @@ export default function User() {
         <Category />
         <Chart />
         <div className='table-title'>All Users</div>
+
+
+      {/* Url params */}
+        <div>Users</div>
+        <div>
+        {profiles.map((profile) => {
+                return (
+                    <section key={profile.id}>
+                        <h3>{profile.id}</h3>
+                        <h2>{profile.name}</h2>
+                        <Link to={`/user/${profile.id}`}>View</Link> 
+                    </section>
+                )
+            })}
+        </div>
+
+
+        {/* ends */}
         <Table />
         <Footer />
     </div>
