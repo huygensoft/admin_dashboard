@@ -24,27 +24,26 @@ export default function User() {
         </div>
 
         <Category />
-        <Chart />
+        <Chart title='Statistical' />
         <div className='table-title'>All Users</div>
-
-
-      {/* Url params */}
-        <div>Users</div>
-        <div>
-        {profiles.map((profile) => {
-                return (
-                    <section key={profile.id}>
-                        <h3>{profile.id}</h3>
-                        <h2>{profile.name}</h2>
-                        <Link to={`/user/${profile.id}`}>View</Link> 
-                    </section>
-                )
-            })}
+        <Table />
+        
+          {/* Url params */}
+            <div>Users</div>
+            <div>
+            {profiles.map((profile) => {
+                    return (
+                        <section key={profile.id}>
+                            <h3>{profile.id}</h3>
+                            <h2>{profile.name}</h2>
+                            <Link to={`/user/${profile.id}`}>View</Link> 
+                        </section>
+                    )
+                })}
         </div>
 
 
         {/* ends */}
-        <Table />
         <Footer />
     </div>
   )

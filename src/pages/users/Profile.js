@@ -3,6 +3,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import profiles from '../../components/profile'
 import './profile.scss';
 import User from '../../components/dashboard/User.svg'
+import Footer from '../home/Footer'
 
 
 export default function Profile() {
@@ -32,7 +33,7 @@ export default function Profile() {
             <Outlet className='outlet'/>
         </div>
     
-        {/* <Link to='/user'>Back to Users</Link> */}
+        <Footer />
     </div>
   )
 }

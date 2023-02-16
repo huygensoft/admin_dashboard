@@ -16,7 +16,7 @@ export default function Home() {
         </div>
 
         <Info />
-        <Chart />
+        <Chart title='Statistical' />
         <Progressbar />
         <div className='NewUser-title'>Newly Registered Users</div>
         <NewUser />

@@ -4,7 +4,7 @@
 }
 h3 {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #2d2d2d;
 }
 .progress-left {
@@ -21,13 +21,45 @@ h3 {
     border-radius: 16px;
     height: 17rem;
     padding: 2rem;
-    width: 60%;
+    width: 65%;
+    position: relative;
 }
-.inner-flex {
+.progress-right-title {
+    position: absolute;
+    top: 2rem;
+    right: 13.5rem
+}
+.inner-flex, .inner-flex-2 {
     display: flex;
     height: 10rem;
     margin: 0 auto;
+    margin-top: 2rem;
     justify-content: space-around;
+    align-items: center;
+
+}
+.inner-flex-2 {
+    justify-content: center;
+}
+.pie-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 9rem;
+    border-left: 1px solid #CCCCCC;
+    padding-left: 20px;
+}
+.pie-item {
+    display: flex;
+}
+.pie-item span {
+    background: #0088FE;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: -5px;
 }
 .text-position {
   position: relative;
@@ -36,8 +68,8 @@ h3 {
 }
 .inner-content {
     position: absolute;
-    top: 44px;
-    left: 48px;
+    top: 61px;
+    left: 62px;
     color: #69737C;
     text-align: center;
 }
@@ -49,25 +81,32 @@ h3 {
     font-size: 14px;
     font-weight: 500;
 }
-.svg-container {
-    display: block;
-    width: 150px;
-    height: 150px;
-    transform: rotate(-90deg);
-}
-.svg-track, .svg-indicator {
-    cx: 75px;
-    cy: 75px;
-    r: 67px;
-    fill: transparent;
-    stroke-width: 8px;
+// .pie-chart {
+//     // transform: rotate(-100deg);
+//     // color: black;
+// }
 
-}
-.svg-track {
-    stroke: #ddd;
-}
-.svg-indicator {
-    stroke: #07c;
-    stroke-dasharray: 420.76px;
-    stroke-dashoffset: 315.57px;
-}
+
+// Manual SVG STYLES
+// .svg-container {
+//     display: block;
+//     width: 150px;
+//     height: 150px;
+//     transform: rotate(-90deg);
+// }
+// .svg-track, .svg-indicator {
+//     cx: 75px;
+//     cy: 75px;
+//     r: 67px;
+//     fill: transparent;
+//     stroke-width: 8px;
+
+// }
+// .svg-track {
+//     stroke: #ddd;
+// }
+// .svg-indicator {
+//     stroke: #07c;
+//     stroke-dasharray: 420.76px;
+//     stroke-dashoffset: 315.57px;
+// }
