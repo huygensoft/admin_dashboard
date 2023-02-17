@@ -32,6 +32,14 @@ import Job from '../../pages/users/Job'
 import Financial from '../../pages/users/Financial'
 import Invoice from '../../pages/users/Invoice';
 
+// Books Inner Sections
+import Published from '../../pages/books/Published';
+import DraftBook from '../../pages/books/DraftBook';
+import ReadBook from '../../pages/books/ReadBook';
+import NewlyBook from '../../pages/books/NewlyBook';
+import BookDetail from '../../pages/books/BookDetail';
+import BookOverview from '../../pages/books/BookOverview'
+
 function Dashboard() {
   return (
     <div className='dashboard'>
@@ -90,6 +98,8 @@ function Dashboard() {
         <div className='main'>
           <Routes>
             <Route path='/' element={<Home />} />
+
+              {/* Users */}
             <Route path='/user' element={<User />} />
             <Route path='/user/:profileId' element={<Profile />} >
                 <Route path='basic' element={<Basic />} />
@@ -98,7 +108,17 @@ function Dashboard() {
                 <Route path='financial' element={<Financial />} />
                 <Route path='invoice' element={<Invoice />} />
             </Route>  
+
+              {/* Books */}
             <Route path='/books' element={<Books />} />
+            <Route path='published' element={<Published />} />
+            <Route path='/bookdetail' element={<BookDetail />} />
+            <Route path='bookoverview' element={<BookOverview />} />
+            <Route path='draftbook' element={<DraftBook />} />
+            <Route path='readbook' element={<ReadBook />} />
+            <Route path='newlybook' element={<NewlyBook />} />
+
+              {/* Writers */}
             <Route path='/writers' element={<Writers />} />
             <Route path='/readers' element={<Readers />} />
             <Route path='/earnings' element={<Earnings />} />
