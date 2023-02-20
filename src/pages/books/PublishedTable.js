@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
 import { DataGrid } from '@mui/x-data-grid';
+import btn from '../../images/btn.svg'
+import hide from '../../images/hide.svg'
+import unpublished from '../../images/unpublished.svg'
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import { Link } from 'react-router-dom'
 
 
 const rows = [
@@ -31,7 +36,28 @@ const columns = [
   { field: 'review', headerName: 'Review', width: 150 },
   { field: 'book price', headerName: 'Book Price', width: 150 },
   { field: 'download', headerName: 'Downloads', width: 200 },
-  { field: 'actions', headerName: 'Actions', width: 200 },
+  { field: 'actions', headerName: 'Actions', width: 300, 
+    renderCell:
+    (params) => {
+      return(
+        <div>
+          <span>
+            <img src={btn} alt='Delete btn' />
+            <span>Delete</span>
+          </span>
+          <span>
+            <img src={hide} alt='Hide btn' />
+            <span>Hide</span>
+          </span>
+          <span>
+            <img src={unpublished} alt='Unpublished btn' />
+            <span>Unpublished</span>
+          </span>
+          <Link to='/bookdetail'><VisibilityIcon /></Link>
+        </div>
+      )
+    }
+  }
   
 ];
 
