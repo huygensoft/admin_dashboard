@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import BookDetailGraph from './BookDetailGraph'
 import BookDetailImpression from './BookDetailImpression'
 import BookDetailReview from './BookDetailReview'
@@ -22,7 +23,7 @@ export default function BookDetail() {
                 know. It’s about how you behave. And behaviour is hard <br />
                 to teach, even to really smart people.
                 </p>
-                <button> See Overview</button>
+                <Link to='/bookoverview'><button> See Overview</button></Link>
             </div>
 
         </div>
