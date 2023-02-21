@@ -1,5 +1,6 @@
 .bookoverview {
     margin-top: 35px;
+    width: 90%;
 }
 .book-view-container {
     height: 34rem;
@@ -21,15 +22,50 @@
     font-size: 3.5rem;
 
 }
+.book-view-content p {
+    font-weight: 700;
+    font-size: 28px;
+}
 .book-view-btn button {
-    background: #FF735C;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px;
     height: 55px;
-    border-style: none;
     margin-top: 1.4rem;
-    color: #fff;
     width: 220px;
+}
+.btn-1 {
+    background: #FF735C;
+    color: #fff;
+    border-style: none;
+}
+.btn-2 {
+    margin-left: 2rem;
+    background: #fff;
+    color: #FF735C;
+    border: 1px solid #FF735C;
+} 
+.book-about-title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.book-about-container {
+    text-transform: uppercase;
+}
+.book-overview-btns {
+    display: flex;
+    justify-content: space-around;
+}
+.book-overview-btns button {
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    height: 55px;
+    margin-top: 1.4rem;
+    width: 220px;
+    background: #FF735C;
+    color: #fff;
+    border-style: none;
 }
