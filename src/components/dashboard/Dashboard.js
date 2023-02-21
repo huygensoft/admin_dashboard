@@ -25,7 +25,7 @@ import Forum from '../../pages/forum/Forum'
 import Blog from '../../pages/blog/Blog'
 import Reports from '../../pages/reports/Reports'
 
-// Profile Pages
+//User Profile Pages
 import Basic from '../../pages/users/Basic'
 import Resident from '../../pages/users/Resident'
 import Job from '../../pages/users/Job'
@@ -39,6 +39,21 @@ import ReadBook from '../../pages/books/ReadBook';
 import NewlyBook from '../../pages/books/NewlyBook';
 import BookDetail from '../../pages/books/BookDetail';
 import BookOverview from '../../pages/books/BookOverview'
+import DraftBookDetail from '../../pages/books/DraftBookDetail';
+
+// Writer Profile pages
+import WriterProfile from '../../pages/writers/WriterProfile';
+import WriterBasic from '../../pages/writers/WriterBasic';
+import WriterJob from '../../pages/writers/WriterJob';
+import WriterBook from '../../pages/writers/WriterBook';
+import WriterFinancial from '../../pages/writers/WriterFinancial';
+import WriterInvoice from '../../pages/writers/WriterInvoice';
+
+
+
+
+
+
 
 function Dashboard() {
   return (
@@ -115,11 +130,23 @@ function Dashboard() {
             <Route path='/bookdetail' element={<BookDetail />} />
             <Route path='bookoverview' element={<BookOverview />} />
             <Route path='draftbook' element={<DraftBook />} />
+            <Route path='draftbookdetail' element={<DraftBookDetail />} />
             <Route path='readbook' element={<ReadBook />} />
             <Route path='newlybook' element={<NewlyBook />} />
 
               {/* Writers */}
             <Route path='/writers' element={<Writers />} />
+            <Route path='/writerprofile' element={<WriterProfile />} >
+                <Route path='writerbasic' element={<WriterBasic />} />
+                <Route path='writerjob' element={<WriterJob />} />
+                <Route path='writerbook' element={<WriterBook />} />
+                <Route path='writerfinancial' element={<WriterFinancial />} />
+                <Route path='writerinvoice' element={<WriterInvoice />} />
+            </Route>  
+
+
+
+            {/* Readers */}
             <Route path='/readers' element={<Readers />} />
             <Route path='/earnings' element={<Earnings />} />
             <Route path='/forum' element={<Forum />} />

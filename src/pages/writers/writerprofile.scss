@@ -1,0 +1,209 @@
+$primary-color: #0E625F;
+
+.writerprofile {
+
+}
+.writer-detail-container {
+    background: #fff;
+    height: 85rem;
+    border-radius: 16px;
+    margin-block-start: 92px;
+    margin-block-end: 2rem;
+    padding: 0 2rem;
+    position: relative;
+
+}
+.writer-detail-container img {
+    height: 5rem;
+    position: absolute;
+    top: -34px;
+}
+
+.writer-name-container {
+    padding-block-start: 80px;
+
+}
+.user-name {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2d2d2d;
+}
+.user-email, nav {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #828282;
+}
+nav {
+    margin-top: 49px;
+    margin-left: -12px;
+}
+nav a {
+    color: #69737C;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 0 18px;
+}
+nav a.active {
+    text-decoration: none;
+    color: $primary-color;
+    border-bottom: 5px solid $primary-color;
+    border-bottom-width: 6%;
+    font-weight: 600;
+    padding-bottom: 12px;
+    z-index: 1;
+}
+.basic, .book, .job, .invoice, .finance {
+    padding: 20px;
+    background: #f0efef;
+    height: 30rem;
+    border-radius: 16px;
+    margin-top: 48px;
+    position: relative;
+}
+.second-grid {
+    padding: 20px;
+    background: #f0efef;
+    height: 17rem;
+    top: 28.5rem;
+    border-radius: 16px;
+    margin-top: 48px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+.e-space {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+}
+
+
+// Basic profile
+.basic, .book, .job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding-bottom: 2rem;
+}
+.first, .last, .status,.phone-no, .birth, .nin, .reg ,
+ .gender, .space, .country, .state, .address,
+ .job-stats, .company, .role, .level, .com-address,
+  .acc-name, .bank-name, .acc-no, .bvn, .all-details-container, .e-space {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+}
+h5 {
+    color: #828282;
+}
+.first {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.last {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.phone-no {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.gender {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.status {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+.reg {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+.birth {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+.nin {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.space {
+    grid-column: 3 / 5;
+    grid-row: 1 / 5;
+}
+
+// Resident section
+.address {
+    grid-column: 1 / 3 ;
+    grid-row: 2 / 3;
+}
+
+// Job Section
+.com-address {
+    grid-column: 1 / 3 ;
+    grid-row: 3 / 4;
+}
+
+// Finance Section
+.finance {
+    height: 120rem;
+    margin-top: 53px;
+    // position: relative;
+}
+.finance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 1rem;
+}
+.acc-no {
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3;
+}
+.bvn {
+    grid-column: 2 / 3 ;
+    grid-row: 2 / 3;
+}
+.all-details-container {
+    grid-column: 3 / 5 ;
+    grid-row: 1 / 4;
+    padding: 1rem;
+}
+.all-total {
+    border: 0.3px solid #D0D0D0;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+}
+.all-total div, .all-credit div, .all-debit div {
+    font-size: 1.7rem;
+    margin-top: 2px;
+    font-weight: 600;
+}
+.all-credit-debit {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.all-credit, .all-debit {
+    width: 46%;
+    border: 0.3px solid #D0D0D0;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+}
+// .all-debit {
+
+// }
+.finance-graph-container  {
+    height: 25rem;
+    background: #fff;
+    // position: absolute;
+    margin-top: 4rem;
+    border-radius: 16px;
+}
+.finance-table-container {
+    margin-top: 13rem;
+}
