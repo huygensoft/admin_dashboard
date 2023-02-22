@@ -8,9 +8,25 @@ export default function WriterBook() {
                 <div className='top-book'>
                   <h5>Top Books Written</h5>
                   <div className='top-flex'>
-                      <div>Half of a yellow sun</div>
-                      <div>Things Fall Apart</div>
-                      <div>Purple Hibiscus</div>
+                      <div className='top-box'>Half of a yellow sun</div>
+                      <div className='top-box'>Things Fall Apart</div>
+                      <div className='top-box'>Purple Hibiscus</div>
+                  </div>
+                </div>
+
+                <div className='top-book'>
+                  <h5>Recently Added Books</h5>
+                  <div className='top-flex'>
+                      <div className='top-box'>Half of a yellow sun</div>
+                      <div className='top-box'>Things Fall Apart</div>
+                      <div className='top-box'>Purple Hibiscus</div>
+                  </div>
+                </div>
+
+                <div className='top-book'>
+                  <h5>Awards Won</h5>
+                  <div className='top-flex'>
+                      <div className='top-box'>Best Selling Author</div>
                   </div>
                 </div>
 
@@ -18,7 +34,9 @@ export default function WriterBook() {
 
             {/* Empty boxes */}
             <div className='book-flex-2'>
-
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </div>
         
