@@ -1,13 +1,10 @@
 import React from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
-// import ProgressBar from 'react-customizable-progressbar'
-import './progressbar.scss'
 
 
 
-export default function Progressbar() {
-
-    // For Piechart
+export default function ProgressPie() {
+    
     const data = [
         { name: 'Inactive', value: 300 },
         { name: 'Male', value: 550 },
@@ -31,6 +28,13 @@ export default function Progressbar() {
         
       ]
 
+      const data4 = [
+    
+        { name: 'Read', value: 400 },
+        { name: 'Unread', value: 900 },
+        
+      ]
+
 
       const COLORS = ['#F4F0FD', '#E5DAFB', '#5E3FBE'];
       
@@ -48,21 +52,16 @@ export default function Progressbar() {
       };
 
 
-    //   For Circular Progress Bar
-    // const pg = 35;
-    // const pw = 25;
-    // const pf = 68;
-
   return (
-    <div className='progress'>
+    <div className='pieChart'>
 
-        {/* Left */}
-        <div className='progress-left' >
-           <h3> Gender Distribution</h3>
-
-           <div className='inner-flex'>     
-                <ResponsiveContainer width="56%" height="100%">
-                    <PieChart width={500} height={400} className='pie-chart'>
+      {/* Pie container one */}
+        <div className='pie-container'>
+            <div className='box-left'>
+              <h2>title</h2>
+            <div className='inner-flex'>     
+                <ResponsiveContainer width="32%" height="100%">
+                    <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data}
                             cx="50%"
@@ -82,22 +81,13 @@ export default function Progressbar() {
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='pie-detail'>
-                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female {data[2].value}</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male {data[1].value}</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others {data[0].value}</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
-            </div>
-        </div>
-
-        {/* Right */}
-        <div className='progress-right' >
-            <h3>Corporate Distribution</h3>
-            <h3 className='progress-right-title'>Books Distribution</h3>
-        
-            <div className='inner-flex-2'>     
-                <ResponsiveContainer width="56%" height="100%">
-                    <PieChart width={500} height={400} className='pie-chart'>
+                <ResponsiveContainer width="32%" height="100%">
+                    <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data2}
                             cx="50%"
@@ -117,16 +107,24 @@ export default function Progressbar() {
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='pie-detail'>
-                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Readers </div>
-                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Writers </div>
-                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Invalid </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others</div>
                 </div>
 
+            </div>
+            </div>
+            <div className='box-right'></div>
+        </div>
 
-            {/* inner 2 */}
 
-            <ResponsiveContainer width="56%" height="100%">
-                    <PieChart width={500} height={400} className='pie-chart'>
+        {/* Pie container two */}
+        <div className='pie-container'>
+            <div className='box-left'>
+              <h2>title</h2>
+            <div className='inner-flex'>     
+                <ResponsiveContainer width="32%" height="100%">
+                    <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data3}
                             cx="50%"
@@ -146,14 +144,42 @@ export default function Progressbar() {
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='pie-detail'>
-                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Read</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Unread</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
+                <ResponsiveContainer width="32%" height="100%">
+                    <PieChart width={400} height={400} className='pie-chart'>
+                        <Pie
+                            data={data4}
+                            cx="50%"
+                            cy="50%"
+                            labelLine={false}
+                            label={renderCustomizedLabel}
+                            outerRadius={80}
+                            fill="black"
+                            dataKey="value"
+                            startAngle={-270}
+    
+                        >
+                            {data.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                            ))}
+                        </Pie>
+                    </PieChart>
+                </ResponsiveContainer>
+                <div className='pie-detail'>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others</div>
+                </div>
             </div>
-
-            
+                
+            </div>
+            {/* <div className='box-right'></div> */}
         </div>
+
     </div>
   )
 }

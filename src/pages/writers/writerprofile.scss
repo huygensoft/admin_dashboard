@@ -80,10 +80,17 @@ nav a.active {
 
 
 // Basic profile
-.basic, .book, .job {
+.basic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    padding-bottom: 2rem;
+}
+.job {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 16px;
     padding-bottom: 2rem;
 }
@@ -134,6 +141,51 @@ h5 {
     grid-column: 3 / 5;
     grid-row: 1 / 5;
 }
+// book section
+.book-profile-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.book-flex-1 {
+    flex: 1;
+}
+.top-book {
+    margin-top: 2rem;
+}
+.top-book h5 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #2D2D2D;
+}
+.top-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.top-box {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    height: 5.2rem;
+}
+.book-flex-2 {
+    margin-left: 1rem;
+    width: 20%;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+.book-flex-2 div {
+    width: 70%;
+    height: 6rem;
+    border: 1px solid #69737C;
+    border-radius: 5px;
+}
+
 
 // Resident section
 .address {
