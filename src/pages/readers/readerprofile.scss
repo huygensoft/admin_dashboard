@@ -1,8 +1,8 @@
 $primary-color: #0E625F;
 
-.writerprofile {
+// .readerprofile {
 
-}
+// }
 .writer-detail-container {
     background: #fff;
     height: 85rem;
@@ -80,6 +80,7 @@ nav a.active {
 }
 
 
+
 // Basic profile
 .basic {
     display: grid;
@@ -141,7 +142,47 @@ h5 {
 .space {
     grid-column: 3 / 5;
     grid-row: 1 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.space-inner {
+    height: 10rem;
+    width: 52%;
+    // border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.space-inner button {
+    width: 130px;
+    height: 44px;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    border-style: none;
+}
+// edit btn
+.btn-1 {
+    background: #2F80ED;
+}
+// delete btn
+.btn-2 {
+    background: #EB5757;
+}
+// total btn
+.btn-3 {
+    background: #FF0000;
+}
+// shadow btn
+.btn-4 {
+    background: #E2B93B;
+    // font-size: 17px;
+}
+
 // book section
 .book-profile-flex-container {
     display: flex;
@@ -259,4 +300,17 @@ h5 {
 }
 .finance-table-container {
     margin-top: 13rem;
+}
+.pie-position {
+    position: absolute;
+    top: 48rem;
+    background: #f0efef;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 19rem;
+    margin-top: 1.5rem;
+}
+.box-left, .box-right {
+    height: 15rem;
 }
