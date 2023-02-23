@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Chart from '../home/Chart'
 import ProgressPie from './ProgressPie'
 import ReaderTable from './ReaderTable'
@@ -17,7 +18,7 @@ export default function Readers() {
         <ProgressPie />
         <h2>Newly Registered Readers</h2>
         <ReaderTable />
-
+        <div><Link to={'/readertableall'} >All Readers</Link></div>
 
     </div>
   )

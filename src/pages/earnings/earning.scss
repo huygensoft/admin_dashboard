@@ -1,0 +1,91 @@
+.earning {
+    margin-top: 2rem;
+}
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+.bill-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    height: 8rem;
+}
+.box-1, .box-2 {
+    background: #fff;
+    border-radius: 12px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.box-1 img , .box-2 img {
+    height: 4.4rem;
+}
+.box-2 {
+    margin-left: 1rem;
+}
+.box-inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.box-span-1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+.box-span-2 {
+    margin-top: 5px;
+    color: #69737C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.progress-container {
+    height: 16rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+}
+.progress-container h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.bar-1, .bar-2 {
+    background: #fff;
+    border-radius: 12px;
+}
+.bar-1 {
+    width: 40%;
+}
+.bar-2 {
+    width: 58.3%;
+}
+.bar-inner {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+.text-position {
+    position: relative;
+  //   padding-right: 1rem;
+  //   border-right: 1px solid #CCCCCC;
+  }
+  .inner-content {
+      position: absolute;
+      top: 61px;
+      left: 62px;
+      color: #69737C;
+      text-align: center;
+  }
+  .percent {
+      font-style: italic;
+      font-size: 29px;
+  }
+  .text {
+      font-size: 14px;
+      font-weight: 500;
+  }
+  .trans-table-container {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }

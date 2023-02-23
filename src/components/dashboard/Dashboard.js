@@ -49,6 +49,10 @@ import WriterBook from '../../pages/writers/WriterBook';
 import WriterFinancial from '../../pages/writers/WriterFinancial';
 import WriterInvoice from '../../pages/writers/WriterInvoice';
 
+// Reader Profile
+import ReaderTableAll from '../../pages/readers/ReaderTableAll';
+import ReaderProfile from '../../pages/readers/ReaderProfile';
+import ReaderBasic from '../../pages/readers/ReaderBasic';
 
 
 
@@ -148,6 +152,17 @@ function Dashboard() {
 
             {/* Readers */}
             <Route path='/readers' element={<Readers />} />
+            <Route path='/readertableall' element={<ReaderTableAll />} />
+            <Route path='/readerprofile' element={<ReaderProfile />} >
+                <Route path='readerbasic' element={<ReaderBasic />} />
+                {/* <Route path='writerjob' element={<WriterJob />} />
+                <Route path='writerbook' element={<WriterBook />} /> */}
+                <Route path='writerfinancial' element={<WriterFinancial />} />
+                <Route path='writerinvoice' element={<WriterInvoice />} />
+            </Route>  
+
+
+            {/* Earnings */}
             <Route path='/earnings' element={<Earnings />} />
             <Route path='/forum' element={<Forum />} />
             <Route path='/blog' element={<Blog />} />
