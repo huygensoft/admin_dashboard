@@ -30,6 +30,21 @@
     font-size: 20px;
     font-weight: 600;
 }
+.table-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+.table {
+    height: 41rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    margin-top: 15px;
+    padding: 30px 15px;
+    margin-bottom: 2rem;
+}
+
 .footer {
     text-align: right;
     padding-bottom: 3rem;

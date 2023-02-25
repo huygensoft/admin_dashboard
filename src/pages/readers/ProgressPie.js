@@ -61,7 +61,7 @@ export default function ProgressPie() {
         <div className='pie-container'>
             <div className='box-left'>
               <h2>title</h2>
-            <div className='inner-flex'>     
+            <div className='reader-inner-flex'>     
                 <ResponsiveContainer width="32%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
@@ -162,7 +162,7 @@ export default function ProgressPie() {
         <div className='pie-container'>
             <div className='box-left'>
               <h2>title</h2>
-            <div className='inner-flex'>     
+            <div className='reader-inner-flex'>     
                 <ResponsiveContainer width="32%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie

@@ -1,6 +1,6 @@
 import React from 'react'
 import DraftTable from './DraftTable'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 export default function DraftBook() {
   return (

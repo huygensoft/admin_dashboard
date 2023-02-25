@@ -1,0 +1,46 @@
+.table-tops {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+
+  }
+  .table-tops form input, .tablebox-1, .tablebox-2 {
+    height: 2.9rem;
+    background: #F2F2F2;
+    border-style: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 8px;
+    position: relative;
+  }
+  form {
+    width: 26%;
+    border-radius: 8px;
+    background: #F2F2F2;
+  }
+  form .table-search {
+    position: relative;
+    height: 22px;
+    right: -20px;
+    top: 3px;
+  }
+  .table-box {
+    width: 36%;
+    display: flex;
+    justify-content: space-between;
+    color: #69737C;
+  }
+  .tablebox-1 {
+    width: 193px;
+  }
+  .tablebox-img {
+    height: 20px;
+    margin-left: 9px;
+  }
+  .tablebox-2 {
+    width: 180px;
+  }
+  .tablebox-img-2 {
+    height: 11px;
+    margin-left: 57px;
+  }

@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
-import Chart from '../home/Chart'
+import Chart from '../overview/Chart'
 import { DataGrid } from '@mui/x-data-grid';
+import TableTops from '../../layouts/TableTops';
+import CloseIcon from '../../images/CloseIcon.svg'
 
 
 
 const columns = [
-    { field: 'transaction id', headerName: 'Transaction ID', width: 200, textAlign: 'center', },
+    { field: 'transaction id', headerName: 'Transaction ID', width: 140, headerAlign: 'center'},
     { field: 'amount', headerName: 'Amount (N)', width: 170 },
     { field: 'transaction type', headerName: 'Transaction Type', width: 180 },
     { field: 'status', headerName: 'Status', width: 180 },
@@ -97,7 +99,9 @@ export default function Financial() {
 
         <div className='finance-table-container'>
             <h3>All Transactions</h3>
-            <div style={{ height: 400, width: '100%', background: '#fff', borderRadius: 16, marginTop: 15, }} >
+            <div className='finance-table' >
+                
+                <TableTops />
                 <DataGrid 
                     rows={rows} 
                     columns={columns} 
@@ -105,12 +109,36 @@ export default function Financial() {
                     onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
                     rowsPerPageOptions={[5, 10, 20]}
                     pagination  
+                    sx={{
+                      boxShadow: 2,
+                      border: 2,
+                      height: 520,
+                      fontSize: 17,
+                      borderColor: 'grey',
+                      '& .MuiDataGrid-cell:hover': {
+                        color: 'primary.main',
+                      },
+                    }}
                 />
             </div>
         </div>
 
         <div className='transaction-detail-container'>
-            <h3>Transaction Details</h3>
+            <h3 style={{color: '#2D2D2D'}}>Transaction Details <img src={CloseIcon} alt='close button' className='trans-title-close-btn'/></h3>
+            
+            <div className='transaction-detail'>
+                  <div className='trans-item'><span>Transaction ID</span> <span>47uyHRfe4ks9</span></div>
+                  <div className='trans-item'><span>Amount Transacted</span> <span>120,000 (#) Naira</span></div>
+                  <div className='trans-item'><span>Sender</span> <span>Booksrite</span></div>
+                  <div className='trans-item'><span>Receiver</span> <span>Adebayo Oluwafemi</span></div>
+                  <div className='trans-item'><span>Transaction Form</span> <span>Withdrawal/Monetary Transaction</span></div>
+                  <div className='trans-item'><span>Transaction Type</span> <span>Debit</span></div>
+                  <div className='trans-item'><span>Transaction Status</span> <span>Successful</span></div>
+                  <div className='trans-item'><span>Date & Time of Transaction</span> <span>Transaction ID</span></div>
+            
+                  <div className='trans-btn-container'><button className='trans-btn'>Download</button></div>
+            
+            </div>
         </div>
 
     </div>

@@ -53,7 +53,7 @@ const data = [
 
 
   return (
-    <div className='basic'>
+    <div className='reader-basic'>
         <div className='first'>
             <h5>Firstname</h5>
             <div>Adebayo</div>
@@ -70,19 +70,19 @@ const data = [
             <h5>Gender</h5>
             <div>Male</div>
         </div>
-        <div className='status'>
+        <div className='reader-status'>
             <h5>Status</h5>
             <div>Active</div>
         </div>
-        <div className='reg'>
+        <div className='reader-reg'>
             <h5>Date of Registration</h5>
             <div> 4th, October 2020</div>
         </div>
-        <div className='birth'>
+        <div className='reader-birth'>
             <h5>Date of Birth</h5>
             <div>28th of November 2001</div>
         </div>
-        <div className='nin'>
+        <div className='reader-nin'>
             <h5>NIN</h5>
             <div>1234567890</div>
         </div>

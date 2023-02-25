@@ -1,10 +1,10 @@
 import React from 'react'
 import './books.scss'
 import { Link } from 'react-router-dom'
-import user from '../home/user.svg'
+import user from '../overview/user.svg'
 import BookGraph from './BookGraph'
 import BookTable from './BookTable'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 export default function Books() {
   return (

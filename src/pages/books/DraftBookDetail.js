@@ -1,7 +1,7 @@
 import React from 'react'
 import book_detail_image from '../../images/book_detail_image.svg'
 import './bookOverview.scss'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 
 export default function DraftBookDetail() {

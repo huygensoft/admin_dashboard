@@ -1,6 +1,6 @@
 import React from 'react'
 import NewlyTable from './NewlyTable'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 export default function NewlyBook() {
   return (

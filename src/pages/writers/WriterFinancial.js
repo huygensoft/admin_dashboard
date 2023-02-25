@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Chart from '../home/Chart'
+import Chart from '../overview/Chart'
 import { DataGrid } from '@mui/x-data-grid';
 
 

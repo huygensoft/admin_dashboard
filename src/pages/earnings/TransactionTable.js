@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import { DataGrid } from '@mui/x-data-grid';
+import TableTops from '../../layouts/TableTops';
+// import  -btn from '../../images/search-btn.svg'
+// import ex-btn from '../../images/ex-btn.svg'
 
-
+// 
 
 const columns = [
     { field: 'transaction id', headerName: 'Transaction ID', width: 200, textAlign: 'center', },
@@ -50,7 +53,9 @@ export default function TransactionTable() {
   return (      
         <div className='trans-table-container'>
             <h3>Transaction History</h3>
-            <div style={{ height: 400, width: '100%', background: '#fff', borderRadius: 16, marginTop: 15, }} >
+            <div style={{ paddingTop: 10, height: 400, width: '100%', background: '#fff', borderRadius: 16, marginTop: 15, }} >
+                
+                <TableTops />
                 <DataGrid 
                     rows={rows} 
                     columns={columns} 

@@ -3,6 +3,7 @@ import './earning.scss'
 import ProgressBar from 'react-customizable-progressbar'
 import bill from '../../images/bill.svg'
 import TransactionTable from './TransactionTable'
+import Footer from '../overview/Footer'
 
 export default function Earnings() {
 
@@ -223,7 +224,7 @@ export default function Earnings() {
 
       {/* Table */}
         <TransactionTable />
-
+        <Footer />
 
     </div>
   )
