@@ -1,6 +1,6 @@
 import React from 'react'
 import PublishedTable from './PublishedTable'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 // import { Link } from 'react-router-dom'
 
 export default function Published() {

@@ -2,7 +2,7 @@ import React from 'react'
 import './Topbar.scss';
 import User from './User.svg';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from '../../images/SearchIcon.svg'
 
 export default function Topbar() {
   return (
@@ -14,7 +14,7 @@ export default function Topbar() {
               <form>
                 <input type='search' className='search-input' placeholder='Search Dashboard'/>
                 <button type='submit' aria-label='submit form' className='search-btn'>
-                  <SearchIcon />
+                <img src={SearchIcon} alt='User' className='Search icon' />
                 </button>
               </form>
             </div>

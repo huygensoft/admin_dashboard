@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function WriterBasic() {
   return (
-    <div className='basic'>
+    <div className='writer-basic'>
         <div className='first'>
             <h5>Firstname</h5>
             <div>Adebayo</div>
@@ -19,19 +19,19 @@ export default function WriterBasic() {
             <h5>Gender</h5>
             <div>Male</div>
         </div>
-        <div className='status'>
+        <div className='writer-status'>
             <h5>Status</h5>
             <div>Active</div>
         </div>
-        <div className='reg'>
+        <div className='writer-reg'>
             <h5>Date of Registration</h5>
             <div> 4th, October 2020</div>
         </div>
-        <div className='birth'>
+        <div className='writer-birth'>
             <h5>Date of Birth</h5>
             <div>28th of November 2001</div>
         </div>
-        <div className='nin'>
+        <div className='writer-nin'>
             <h5>NIN</h5>
             <div>1234567890</div>
         </div>

@@ -48,10 +48,6 @@ export default function Progressbar() {
       };
 
 
-    //   For Circular Progress Bar
-    // const pg = 35;
-    // const pw = 25;
-    // const pf = 68;
 
   return (
     <div className='progress'>
@@ -82,9 +78,9 @@ export default function Progressbar() {
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='pie-detail'>
-                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female {data[2].value}</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male {data[1].value}</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others {data[0].value}</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male </div>
+                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
             </div>
@@ -150,10 +146,10 @@ export default function Progressbar() {
                     <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Unread</div>
                 </div>
 
-            </div>
-
-            
+            </div> 
         </div>
+    
+    
     </div>
   )
 }

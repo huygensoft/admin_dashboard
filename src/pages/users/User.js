@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import Category from './Category'
-import Chart from '../home/Chart'
+import Chart from '../overview/Chart'
 import Table from './Table'
-import Footer from '../home/Footer'
-import profiles from '../../components/profile'
+import Footer from '../overview/Footer'
+
 import './user.scss'
 
 export default function User() {
@@ -28,7 +28,7 @@ export default function User() {
         <div className='table-title'>All Users</div>
         <Table />
         
-          {/* Url params */}
+          {/* Url params
             <div>Users</div>
             <div>
             {profiles.map((profile) => {
@@ -40,7 +40,7 @@ export default function User() {
                         </section>
                     )
                 })}
-        </div>
+        </div> */}
 
 
         {/* ends */}

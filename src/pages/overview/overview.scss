@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.overview {
+    background: #E7E7E7;
+    width: 97%;
+    margin: 0 auto;
+}
+.title {
+    padding: 35px 0;
+
+}
+.title-salute {
+    margin-block-end: 2px;
+    margin-block-start: 0;
+    font-size: 20px;
+
+}
+.title-tag {
+    color: #69737C;
+    font-size: 0.8rem;
+}
+
+.footer {
+    text-align: right;
+    margin: 3rem 0;
+}
+
+// Table
+.newUser {
+    margin: 4rem 0;
+}
+.new-user-column span {
+    padding: 0 5px;
+}
+.newuser-table {
+    height: 41rem;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    margin-top: 15px;
+    padding: 30px 15px;
+}
+.newuser-btn-container {
+    text-align: right;
+    margin: 15px 0;
+}
+.newuser-btn-container button {
+    background: #FEF6F6;
+    height: 48px;
+    width: 167px;
+    padding: 16px;
+    border-radius: 12px;
+    border-style: none;
+    color: #EB5757;
+    font-size: 16px;
+    font-weight: 500;
+}
+.NewUser-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2d2d2d;
+}

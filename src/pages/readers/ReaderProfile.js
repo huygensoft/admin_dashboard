@@ -3,7 +3,7 @@ import './readerprofile.scss'
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import ArrowBackIcon from '@mui/icons-material/ArrowBack'
 import User from '../../components/dashboard/User.svg'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 export default  function ReaderProfile() {
   return (

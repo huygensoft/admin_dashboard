@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Chart from '../home/Chart'
+import Chart from '../overview/Chart'
 import ProgressPie from './ProgressPie'
 import ReaderTable from './ReaderTable'
 import './reader.scss'

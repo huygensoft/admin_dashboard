@@ -1,17 +1,17 @@
 import React from 'react'
-import { useParams } from 'react-router-dom';
-import profiles from '../../components/profile'
+// import { useParams } from 'react-router-dom';
+// import profiles from '../../dummyData/profile'
 
 export default function Basic() {
-    const { profileId } = useParams();
-    const profile = profiles.find((profile) => profile.id === profileId);
-    const { name } = profile;
+    // const { profileId } = useParams();
+    // const profile = profiles.find((profile) => profile.id === profileId);
+    // const { name } = profile;
 
   return (
     <div className='basic'>
         <div className='first'>
             <h5>Firstname</h5>
-            <div>{name}</div>
+            <div></div>
         </div>
         <div className='last'>
             <h5>Lastname</h5>

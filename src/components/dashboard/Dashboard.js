@@ -14,7 +14,7 @@ import NewspaperIcon from '@mui/icons-material/Newspaper';
 import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
 
 // Pages
-import Home from '../../pages/home/Home'
+import Overview from '../../pages/overview/Overview'
 import User from '../../pages/users/User'
 import Profile from '../../pages/users/Profile';
 import Books from '../../pages/books/Books'
@@ -116,11 +116,11 @@ function Dashboard() {
         {/* Main Board */}
         <div className='main'>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/' element={<Overview />} />
 
               {/* Users */}
             <Route path='/user' element={<User />} />
-            <Route path='/user/:profileId' element={<Profile />} >
+            <Route path='/profile' element={<Profile />} >
                 <Route path='basic' element={<Basic />} />
                 <Route path='resident' element={<Resident />} />
                 <Route path='job' element={<Job />} />

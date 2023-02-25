@@ -1,6 +1,6 @@
 import React from 'react'
 import ReadTable from './ReadTable'
-import Footer from '../home/Footer'
+import Footer from '../overview/Footer'
 
 export default function ReadBook() {
   return (

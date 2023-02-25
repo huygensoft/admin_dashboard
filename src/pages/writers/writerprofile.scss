@@ -52,7 +52,7 @@ nav a.active {
     padding-bottom: 12px;
     z-index: 1;
 }
-.basic, .book, .job, .invoice, .finance {
+.writer-basic, .book, .job, .invoice, .finance {
     padding: 20px;
     background: #f0efef;
     height: 30rem;
@@ -81,7 +81,7 @@ nav a.active {
 
 
 // Basic profile
-.basic {
+.writer-basic {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -95,7 +95,7 @@ nav a.active {
     gap: 16px;
     padding-bottom: 2rem;
 }
-.first, .last, .status,.phone-no, .birth, .nin, .reg ,
+.first, .last, .writer-status,.phone-no, .writer-birth, .writer-nin, .writer-reg ,
  .gender, .space, .country, .state, .address,
  .job-stats, .company, .role, .level, .com-address,
   .acc-name, .bank-name, .acc-no, .bvn, .all-details-container, .e-space {
@@ -122,19 +122,19 @@ h5 {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-.status {
+.writer-status {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
-.reg {
+.writer-reg {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
-.birth {
+.writer-birth {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
 }
-.nin {
+.writer-nin {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
