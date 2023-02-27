@@ -62,7 +62,7 @@ export default function Table() {
   return (
       <div className='table' >
           
-          <TableTops />
+          <TableTops text='Search Users' />
           <DataGrid 
             rows={Rows} 
             columns={columns} 

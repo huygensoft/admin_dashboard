@@ -38,7 +38,7 @@ export default function BookDetail() {
         <BookDetailImpression />
 
         {/* book reviews */}
-        <h2 style={{fontSize: 36, fontWeight: 600, marginTop: 5,}}>Reviews</h2>
+        <h2 style={{fontSize: 36, fontWeight: 600, marginTop: 50,}}>Reviews</h2>
         <BookDetailReview />
 
         <Footer />

@@ -1,0 +1,119 @@
+@import "../body";
+@import"../variable";
+
+body {
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;
+
+    img {
+        height: 24rem;
+    }
+
+    div {
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 23px;
+        color: #2d2d2d;
+        text-align: center;
+    }
+
+    button {
+        background-color: var(--primary-color);
+        color: #fff;
+        border-radius: 12px;
+        padding: 19px 74px;
+        text-align: center;
+        border-style: none;
+        height: 72px;
+        gap: 10px;
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+}
+
+
+// Media Queries
+
+// Mobile
+@media screen and (min-width:320px) and (max-width:767px) {
+    .container {
+        height: 33rem;
+
+        img {
+            height: 14rem;
+        }
+
+        div {
+            font-size: 0.8rem;
+            line-height: 17px;
+        }
+
+        button {
+            padding: 16px 23px;
+            height: 52px;
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+    
+
+// Tablets
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        height: 33rem;
+
+        img {
+            height: 17rem;
+        }
+
+        div {
+            font-size: 1rem;
+            line-height: 21px;
+        }
+
+        button {
+            padding: 16px 32px;
+            height: 52px;
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+
+// Small Laptop
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .container {
+        height: 33rem;
+
+        img {
+            height: 17rem;
+        }
+
+        div {
+            font-size: 1rem;
+            line-height: 21px;
+        }
+
+        button {
+            padding: 16px 34px;
+            height: 52px;
+            font-size: 0.7rem;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+
+// Large Screen
+@media screen and (min-width:1440px) {
+
+}
+
