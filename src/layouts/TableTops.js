@@ -4,11 +4,11 @@ import SearchIcon from '../images/SearchIcon.svg'
 import ExportIcon from '../images/ExportIcon.svg'
 import FilterIcon from '../images/FilterIcon.svg'
 
-export default function TableTops() {
+export default function TableTops(props) {
   return (
     <div className='table-tops'>
         <form>
-            <input type='search' placeholder='Search Transaction'/>
+            <input type='search' placeholder={props.text}/>
             <img src={SearchIcon} alt='search' className='table-search'/>
         </form>
 

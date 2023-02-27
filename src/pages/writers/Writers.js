@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './writer.scss'
 import { DataGrid } from '@mui/x-data-grid';
-import btn from '../../images/btn.svg'
-import hide from '../../images/hide.svg'
-import edit from '../../images/edit.svg'
+import DeleteIcon from '../../images/DeleteIcon.svg'
+import HideIcon from '../../images/HideIcon.svg'
+import EditIcon from '../../images/EditIcon.svg'
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from 'react-router-dom'
 
@@ -50,15 +50,15 @@ export default function Writers() {
         return(
           <div>
             <span>
-              <img src={btn} alt='Delete btn' />
+              <img src={DeleteIcon} alt='Delete btn' />
               <span>Delete</span>
             </span>
             <span>
-              <img src={hide} alt='Hide btn' />
+              <img src={HideIcon} alt='Hide btn' />
               <span>Hide</span>
             </span>
             <span>
-              <img src={edit} alt='edit btn' />
+              <img src={EditIcon} alt='edit btn' />
               <span>Edit</span>
             </span>
             <Link to='/writerprofile'><VisibilityIcon /></Link>

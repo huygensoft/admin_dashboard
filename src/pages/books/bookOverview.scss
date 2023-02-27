@@ -5,7 +5,7 @@
 .book-view-container {
     height: 34rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 // .book-view-box {
 //     // background: #728A7C;
@@ -13,7 +13,7 @@
 //     // padding: 2rem;
 // }
 .book-view-content {
-    width: 56%;
+    width: 62%;
     align-self: center;
 
 }
@@ -35,27 +35,42 @@
     margin-top: 1.4rem;
     width: 220px;
 }
-.btn-1 {
+.book-btn-1 {
     background: #FF735C;
     color: #fff;
     border-style: none;
 }
-.btn-2 {
+.book-btn-2 {
     margin-left: 2rem;
     background: #fff;
     color: #FF735C;
     border: 1px solid #FF735C;
 } 
 .book-about-title {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     border-bottom: 1px solid black;
+    color: #0E625F;
+    font-size: 25px;
 }
 .book-about-container {
     text-transform: uppercase;
+    margin-top: 4rem;
+    height: 52rem;
+}
+.book-about-h2 {
+    font-size: 25px;
+    margin-top: 2rem;
+}
+.book-about-paragraph {
+    font-size: 20px;
+    margin-top: 2px;
+    font-weight: 500;
+    line-height: 35px;
 }
 .book-overview-btns {
     display: flex;
     justify-content: space-around;
+    margin-top: 3rem;
 }
 .book-overview-btns button {
     border-radius: 8px;

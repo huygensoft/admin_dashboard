@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { DataGrid } from '@mui/x-data-grid';
-import btn from '../../images/btn.svg'
-import hide from '../../images/hide.svg'
-import unpublished from '../../images/unpublished.svg'
+import DeleteIcon from '../../images/DeleteIcon.svg'
+import HideIcon from '../../images/HideIcon.svg'
+import UnpublishIcon from '../../images/UnpublishIcon.svg'
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import { Link } from 'react-router-dom'
 
@@ -42,15 +42,15 @@ const columns = [
       return(
         <div>
           <span>
-            <img src={btn} alt='Delete btn' />
+            <img src={DeleteIcon} alt='Delete btn' />
             <span>Delete</span>
           </span>
           <span>
-            <img src={hide} alt='Hide btn' />
+            <img src={HideIcon} alt='Hide btn' />
             <span>Hide</span>
           </span>
           <span>
-            <img src={unpublished} alt='Unpublished btn' />
+            <img src={UnpublishIcon} alt='Unpublished btn' />
             <span>Unpublished</span>
           </span>
           <Link to='/bookdetail'><VisibilityIcon /></Link>
