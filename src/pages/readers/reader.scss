@@ -1,6 +1,6 @@
-.reader {
+// .reader {
 
-}
+// }
 .pieChart {
     // border: 1px solid grey;
     height: 41rem;
@@ -15,23 +15,22 @@
     display: flex;
     justify-content: space-between;
 }
-.box-left {
+.box-left, .box-right {
+    position: relative;
     background: #fff;
-    width: 68%;
     height: 17rem;
     border-radius: 16px;
 }
+.box-left {
+    width: 68%;
+}
 .box-right {
-    background: #fff;
     width: 30%;
-    height: 17rem;
-    border-radius: 16px;
 }
 .reader-inner-flex {
     display: flex;
-    height: 12rem;
-    margin: 0 2rem;
-    margin-top: 2rem;
+    height: 15rem;
+    margin-top: 1.8rem;
     justify-content: space-around;
     align-items: center;
 }
@@ -42,6 +41,7 @@
     height: 9rem;
     border-left: 1px solid #CCCCCC;
     padding-left: 20px;
+    width: 147px;
 }
 .pie-item {
     display: flex;
@@ -54,4 +54,27 @@
     display: inline-block;
     margin-right: 10px;
     margin-top: -5px;
+}
+.pie-span {
+    position: absolute;
+    font-size: 20px;
+    top: 10px;
+    font-weight: 500;
+}
+.span-left {
+    top: 26px;
+    left: 43px;
+
+}
+.span-right {
+    top: 26px;
+    right: 171px;
+    
+}
+.box-right-tag {
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.box-right-inner {
+    margin-top: 5px;
 }

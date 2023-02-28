@@ -6,7 +6,7 @@ import ArrowRightIcon from '../../images/ArrowRightIcon.svg'
 import SlashIcon from '../../images/SlashIcon.svg'
 import CheckCircle from '../../images/CheckCircle.svg'
 import VisibilityIcon from '@mui/icons-material/Visibility';
-import TableTops from '../../layouts/TableTops';
+import TableTops from '../../layouts/TableTops'
 
 
 

@@ -1,14 +1,14 @@
 import React from 'react'
 import './readerprofile.scss'
 import { Link, NavLink, Outlet } from 'react-router-dom'
-import ArrowBackIcon from '@mui/icons-material/ArrowBack'
+import ArrowLeft from '../../images/ArrowLeft.svg'
 import User from '../../components/dashboard/User.svg'
 import Footer from '../overview/Footer'
 
 export default  function ReaderProfile() {
   return (
     <div className='readerprofile container'>
-        <span className='arrow'><Link to='/writers'><ArrowBackIcon /></Link></span>
+        <span className='arrow'><Link to='/writers'><img src={ArrowLeft} alt='btn'/></Link></span>
     
         <div className='writer-detail-container'>
             <img src={User} alt='user'/>

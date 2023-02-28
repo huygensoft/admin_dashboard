@@ -60,9 +60,10 @@ export default function ProgressPie() {
       {/* Pie container one */}
         <div className='pie-container'>
             <div className='box-left'>
-              <h2>title</h2>
+              <span className='pie-span span-left'>Existing Readers</span>
+              <span className='pie-span span-right'>Newly Onboarded Readers</span>
             <div className='reader-inner-flex'>     
-                <ResponsiveContainer width="32%" height="100%">
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data}
@@ -88,7 +89,7 @@ export default function ProgressPie() {
                     <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
-                <ResponsiveContainer width="32%" height="100%">
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data2}
@@ -119,8 +120,8 @@ export default function ProgressPie() {
 
             {/* Circular progress-bar */}
             <div className='box-right'>
-            <h3>Stats of  Undentified Readers</h3>
-            <div className='bar-inner'>
+            <h3 className='box-right-tag'>Stats of  Unidentified Readers</h3>
+            <div className='bar-inner box-right-inner'>
                       <div className='text-position'>
                           {/* all time */}
                             {p1 > 49 ?
@@ -134,7 +135,7 @@ export default function ProgressPie() {
                                         />
                                         <div className='inner-content'>
                                             <div className='percent'>{p1}%</div>
-                                            <div className='text'>All Time</div>
+                                            {/* <div className='text'>All Time</div> */}
                                         </div>
                                 </div>
                                 :
@@ -148,7 +149,7 @@ export default function ProgressPie() {
                                     />
                                     <div className='inner-content'>
                                         <div className='percent'>{p1}%</div>
-                                        <div className='text'>All Time</div>
+                                        {/* <div className='text'>All Time</div> */}
                                     </div>
                                 </div>    
                             }
@@ -161,9 +162,10 @@ export default function ProgressPie() {
         {/* Pie container two */}
         <div className='pie-container'>
             <div className='box-left'>
-              <h2>title</h2>
-            <div className='reader-inner-flex'>     
-                <ResponsiveContainer width="32%" height="100%">
+              <span className='pie-span span-left'>Readers using the App the Most</span>
+              <span className='pie-span span-right'>Readers Engaging  Books</span>
+                <div className='reader-inner-flex'>     
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data3}
@@ -189,7 +191,7 @@ export default function ProgressPie() {
                     <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
-                <ResponsiveContainer width="32%" height="100%">
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data4}
@@ -210,11 +212,10 @@ export default function ProgressPie() {
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='pie-detail'>
-                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Female</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Male</div>
-                    <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#5E3FBE'}}></span>Read</div>
+                    <div className='pie-item'><span style={{backgroundColor: '#E5DAFB'}}></span>Unread</div>
                 </div>
-            </div>
+                </div>
                 
             </div>
             {/* <div className='box-right'></div> */}

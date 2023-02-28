@@ -117,7 +117,7 @@ const data = [
         {/* Pie chart */}
         
         <div className='pie-container pie-position'>
-            <div className='box-left'>
+            <div className='r-left box-left'>
               <h2>title</h2>
             <div className='inner-flex'>     
                 <ResponsiveContainer width="32%" height="100%">
@@ -176,7 +176,7 @@ const data = [
             </div>
 
             {/* Circular progress-bar */}
-            <div className='box-right'>
+            <div className='r-right box-right'>
             <h3>Stats of  Undentified Readers</h3>
             <div className='bar-inner'>
                       <div className='text-position'>

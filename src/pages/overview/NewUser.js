@@ -10,14 +10,14 @@ import CheckCircle from '../../images/CheckCircle.svg'
 
 
 const columns = [
-  { field: 'Avatar', headerName: 'Avatar', width: 100, textAlign: 'center', },
+  { field: 'Avatar', headerName: 'Avatar', width: 100},
   { field: 'Firstname', headerName: 'Firstname', width: 150 },
   { field: 'Lastname', headerName: 'Lastname', width: 150 },
   { field: 'Middlename', headerName: 'Middle Name', width: 150 },
   { field: 'Email Address', headerName: 'Email Address', width: 150 },
   { field: 'Phone Number', headerName: 'Mobile Number', width: 150 },
   { field: 'Reg. Date', headerName: 'Reg. Date', width: 150 },
-  { field: 'Action', headerName: 'Action', width: 210, 
+  { field: 'Action', headerName: 'Action', width: 210,  headerAlign: 'center', 
     renderCell: 
     (params) => {
       return(

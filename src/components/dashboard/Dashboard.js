@@ -11,7 +11,7 @@ import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import LocalAtmIcon from '@mui/icons-material/LocalAtm';
 import ForumIcon from '@mui/icons-material/Forum';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
-import ReportGmailerrorredIcon from '@mui/icons-material/ReportGmailerrorred';
+
 
 // Pages
 import Overview from '../../pages/overview/Overview'
@@ -22,10 +22,7 @@ import Writers from '../../pages/writers/Writers'
 import Readers from '../../pages/readers/Readers'
 import Earnings from '../../pages/earnings/Earnings'
 import Forum from '../../pages/forum/Forum'
-import Blog from '../../pages/blog/Blog'
-import Reports from '../../pages/reports/Reports'
-
-//User Profile Pages
+import Automation from '../../pages/automation/Automation'
 import Basic from '../../pages/users/Basic'
 import Resident from '../../pages/users/Resident'
 import Job from '../../pages/users/Job'
@@ -95,15 +92,12 @@ function Dashboard() {
                     <li className='sidebar-list-item'> <NavLink to='/earnings' className='link'>
                         <LocalAtmIcon className='sidebar-icon'/>Earnings</NavLink>
                     </li>
+                    <li className='sidebar-list-item'> <NavLink to='/automation' className='link'>
+                        <NewspaperIcon className='sidebar-icon'/>Automation</NavLink>
+                    </li>
                     <li className='sidebar-list-item'> <NavLink to='/forum' className='link'>
                         <ForumIcon className='sidebar-icon'/>Community Forum</NavLink>
-                    </li>
-                    <li className='sidebar-list-item'> <NavLink to='/blog' className='link'>
-                        <NewspaperIcon className='sidebar-icon'/>Blog</NavLink>
-                    </li>
-                    <li className='sidebar-list-item'> <NavLink to='/reports' className='link'>
-                        <ReportGmailerrorredIcon className='sidebar-icon'/>Reports</NavLink>
-                    </li>
+                    </li>        
               </ul>
             </div>
         </div>
@@ -165,8 +159,7 @@ function Dashboard() {
             {/* Earnings */}
             <Route path='/earnings' element={<Earnings />} />
             <Route path='/forum' element={<Forum />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/reports' element={<Reports />} />
+            <Route path='/automation' element={<Automation />} />
           </Routes>
         </div>
         {/* <div className='footer'>
