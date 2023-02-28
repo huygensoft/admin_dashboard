@@ -53,9 +53,9 @@ export default function TransactionTable() {
   return (      
         <div className='trans-table-container'>
             <h3>Transaction History</h3>
-            <div style={{ paddingTop: 10, height: 400, width: '100%', background: '#fff', borderRadius: 16, marginTop: 15, }} >
+            <div className='table'>
                 
-                <TableTops />
+                <TableTops text='Search Transaction'/>
                 <DataGrid 
                     rows={rows} 
                     columns={columns} 
@@ -63,6 +63,16 @@ export default function TransactionTable() {
                     onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
                     rowsPerPageOptions={[5, 10, 20]}
                     pagination  
+                    sx={{
+                      boxShadow: 2,
+                      border: 2,
+                      height: 520,
+                      fontSize: 17,
+                      borderColor: 'grey',
+                      '& .MuiDataGrid-cell:hover': {
+                        color: 'primary.main',
+                      },
+                    }}
                 />
             </div>
         </div>

@@ -11,7 +11,7 @@ export default function Readers() {
 
         <div className='title'>
             <h3 className='title-salute'>Statistics of Readers</h3>
-            <span className='title-tag'>Newly Onboard and Existing</span>
+            <span className='title-tag'>Newly Onboarded and Existing</span>
         </div>
 
         <Chart title='Statistical' />
