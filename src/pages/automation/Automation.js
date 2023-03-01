@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Info from '../overview/Info'
 import './automation.scss'
 import Progressbar from '../overview/Progressbar';
 import Footer from '../overview/Footer';
 import TransactionTable from '../earnings/TransactionTable';
+import Modal from './Modal';
 
 export default function Automation() {
+  const [show, setShow] = useState(false);
+
+  // function openModal() {
+  //   modal.classList.remove('hidden');
+
+  // }
+
+
   return (
     <div className='automation container'> 
         <div className='title'>
@@ -26,7 +35,8 @@ export default function Automation() {
                     <p className='auto-paragraph'>Schedule a mail to send to all members of this  Subscription </p>
                     <div className='auto-duration'>Jan 25, 2023 . 12:00 AM</div>
                     <div className='auto-btn-container'>
-                      <button className='auto-btn-1'>Start</button>
+                      <button className='auto-btn-1' onClick={() => setShow(true)}>Start</button>
+                      <Modal show={show} onClose={() => setShow(false)}/>
                       <button className='auto-btn-2'>Add Subscribers</button>
                     </div>
                 </div>

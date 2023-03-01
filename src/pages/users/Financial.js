@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Chart from '../overview/Chart'
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import TableTops from '../../layouts/TableTops';
 import CloseIcon from '../../images/CloseIcon.svg'
 
@@ -101,7 +101,7 @@ export default function Financial() {
             <h3>All Transactions</h3>
             <div className='finance-table' >
                 
-                <TableTops />
+                <TableTops text='Search Transaction'/>
                 <DataGrid 
                     rows={rows} 
                     columns={columns} 
@@ -109,6 +109,7 @@ export default function Financial() {
                     onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
                     rowsPerPageOptions={[5, 10, 20]}
                     pagination  
+                    components={{ Toolbar: GridToolbar }}
                     sx={{
                       boxShadow: 2,
                       border: 2,

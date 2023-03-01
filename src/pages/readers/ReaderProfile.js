@@ -11,7 +11,7 @@ export default  function ReaderProfile() {
         <span className='arrow'><Link to='/writers'><img src={ArrowLeft} alt='btn'/></Link></span>
     
         <div className='writer-detail-container'>
-            <img src={User} alt='user'/>
+            <img src={User} alt='user' className='writer-detail-img'/>
             
             <div className='writer-name-container'>
                 <div className='user-name'>Adebayo Oluwafemi</div>
@@ -22,8 +22,8 @@ export default  function ReaderProfile() {
                 <NavLink to='readerbasic'>Basic Profile</NavLink>
                 {/* <NavLink to='writerjob'>Job Profile</NavLink>
                 <NavLink to='writerbook'>Book Profile</NavLink> */}
-                <NavLink to='writerfinancial'>Financial Profile</NavLink>
-                <NavLink to='writerinvoice'>Invoices</NavLink>
+                <NavLink to='financial'>Financial Profile</NavLink>
+                <NavLink to='invoice'>Invoices</NavLink>
             </nav>
             <Outlet className='outlet'/>
         </div>

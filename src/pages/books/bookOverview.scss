@@ -3,7 +3,7 @@
     width: 90%;
 }
 .book-view-container {
-    height: 34rem;
+    height: 28rem;
     display: flex;
     justify-content: space-between;
 }
@@ -13,20 +13,20 @@
 //     // padding: 2rem;
 // }
 .book-view-content {
-    width: 62%;
+    width: 69%;
     align-self: center;
 
 }
 .book-view-content h1 {
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3rem;
 
 }
 .book-view-content p {
     font-weight: 700;
     font-size: 28px;
 }
-.book-view-btn button {
+.book-view-btn {
     border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
@@ -34,6 +34,9 @@
     height: 55px;
     margin-top: 1.4rem;
     width: 220px;
+    background: #FF735C;
+    border-style: none;
+    color: #fff;
 }
 .book-btn-1 {
     background: #FF735C;
@@ -51,15 +54,22 @@
     border-bottom: 1px solid black;
     color: #0E625F;
     font-size: 25px;
+    margin-bottom: 35px;
 }
 .book-about-container {
     text-transform: uppercase;
     margin-top: 4rem;
     height: 52rem;
+    position: relative;
 }
 .book-about-h2 {
     font-size: 25px;
     margin-top: 2rem;
+}
+.book-about-img {
+    position: absolute;
+    top: -1px;
+    left: 144px;
 }
 .book-about-paragraph {
     font-size: 20px;

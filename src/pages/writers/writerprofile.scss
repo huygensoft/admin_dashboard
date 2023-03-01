@@ -1,8 +1,8 @@
 $primary-color: #0E625F;
 
-.writerprofile {
+// .writerprofile {
 
-}
+// }
 .writer-detail-container {
     background: #fff;
     height: 85rem;
@@ -13,7 +13,7 @@ $primary-color: #0E625F;
     position: relative;
 
 }
-.writer-detail-container img {
+.writer-detail-img {
     height: 5rem;
     position: absolute;
     top: -34px;
@@ -65,14 +65,40 @@ nav a.active {
     background: #f0efef;
     height: 17rem;
     top: 28.5rem;
+    left: 22px;
     border-radius: 16px;
     margin-top: 48px;
+    margin-left: -20px;
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 16px;
     width: 100%;
+}
+.pie-container-writer {
+    // border: 1px solid grey;
+    height: 18rem;
+    // background: #fff;
+    margin-top: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.pie-position-writer {
+    position: absolute;
+    top: 48rem;
+    left: 2px;
+    background: #f0efef;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 20.5rem;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+.pie-position-writer-job {
+    top: 31rem;
 }
 .e-space {
     grid-column: 3 / 5;
@@ -96,7 +122,7 @@ nav a.active {
     padding-bottom: 2rem;
 }
 .first, .last, .writer-status,.phone-no, .writer-birth, .writer-nin, .writer-reg ,
- .gender, .space, .country, .state, .address,
+ .gender, .writer-space, .country, .state, .address,
  .job-stats, .company, .role, .level, .com-address,
   .acc-name, .bank-name, .acc-no, .bvn, .all-details-container, .e-space {
     background: #fff;
@@ -138,10 +164,58 @@ h5 {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
 }
-.space {
+.writer-space {
     grid-column: 3 / 5;
     grid-row: 1 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.writer-space-inner-grid {
+    // border: 1px solid grey;
+    height: 13rem;
+    width: 57%;
+    display: grid;
+    grid-template-columns: 133px 133px;
+    grid-template-rows: 47px 48px 46px;
+    gap: 31px;
+}
+.writer-space-btn {
+    background: #2f80ed;
+    height: 43px;
+    width: 131px;
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
+    border-style: none;
+    font-size: 19px;
+}
+.edit-btn {
+    background: #2f80ed;
+}
+.award-btn {
+    background: #0E625F;
+}
+.shad-btn {
+    background: #E2B93B;
+}
+.total-btn {
+    background: #FF0000;
+}
+.writer-space-btn-delete {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    height: 43px;
+    width: 295px;
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
+    border-style: none;
+    font-size: 19px;
+    background: #CE0000;
+} 
+
+
 // book section
 .book-profile-flex-container {
     display: flex;
@@ -165,26 +239,69 @@ h5 {
 }
 .top-box {
     background: #fff;
-    padding: 1rem;
+    padding: 10px 15px;
     border-radius: 5px;
-    width: 30%;
+    width: 32%;
     height: 5.2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-progress-inner-content {
+    position: absolute;
+    top: 31px;
+    left: 37px;
+}
+// .top-box-tag {
+//     // font-weight: 500;
+// }
+.top-box-span {
+    height: 89px;
+    width: 35%;
+    position: relative;
+}
+.top-box-award-1 {
+    display: flex;
+    flex-direction: column;
+    color: #69737C;
+    font-size: 19px;
+}
+.top-box-award-2 {
+    font-size: 14px;
+}
+.top-percent {
+    font-size: 12px;
+    color: #828282;
+}
+.top-icon {
+    margin-left: 6px;
 }
 .book-flex-2 {
     margin-left: 1rem;
     width: 20%;
+    height: 14rem;
     // border: 1px solid black;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .book-flex-2 div {
     width: 70%;
-    height: 6rem;
+    height: 5rem;
     border: 1px solid #69737C;
     border-radius: 5px;
+    color: #fff;
+    padding: 0 auto;
+    background: #FFB900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 

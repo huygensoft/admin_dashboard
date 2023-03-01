@@ -43,8 +43,8 @@ import WriterProfile from '../../pages/writers/WriterProfile';
 import WriterBasic from '../../pages/writers/WriterBasic';
 import WriterJob from '../../pages/writers/WriterJob';
 import WriterBook from '../../pages/writers/WriterBook';
-import WriterFinancial from '../../pages/writers/WriterFinancial';
-import WriterInvoice from '../../pages/writers/WriterInvoice';
+// import WriterFinancial from '../../pages/writers/WriterFinancial';
+// import WriterInvoice from '../../pages/writers/WriterInvoice';
 
 // Reader Profile
 import ReaderTableAll from '../../pages/readers/ReaderTableAll';
@@ -138,8 +138,8 @@ function Dashboard() {
                 <Route path='writerbasic' element={<WriterBasic />} />
                 <Route path='writerjob' element={<WriterJob />} />
                 <Route path='writerbook' element={<WriterBook />} />
-                <Route path='writerfinancial' element={<WriterFinancial />} />
-                <Route path='writerinvoice' element={<WriterInvoice />} />
+                <Route path='financial' element={<Financial />} />
+                <Route path='invoice' element={<Invoice />} />
             </Route>  
 
 
@@ -151,8 +151,8 @@ function Dashboard() {
                 <Route path='readerbasic' element={<ReaderBasic />} />
                 {/* <Route path='writerjob' element={<WriterJob />} />
                 <Route path='writerbook' element={<WriterBook />} /> */}
-                <Route path='writerfinancial' element={<WriterFinancial />} />
-                <Route path='writerinvoice' element={<WriterInvoice />} />
+                <Route path='financial' element={<Financial />} />
+                <Route path='invoice' element={<Invoice />} />
             </Route>  
 
 

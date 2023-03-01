@@ -112,7 +112,7 @@ export default function Earnings() {
               <div className='bar-inner'>
                     {/* Jan-Jun */}
                     <div className='text-position'>
-                          {/* all time */}
+                          
                             {p4 > 49 ?
                                 <div>
                                     <ProgressBar

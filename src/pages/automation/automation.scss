@@ -1,6 +1,6 @@
-.automation {
+// .automation {
 
-}
+// }
 .auto-detail-container {
     background: #fff;
     height: 33rem;
@@ -76,4 +76,23 @@
 }
 .box-fade {
     opacity: 0.08;
+}
+
+// modal
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 97%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    width: 40%;
+    height: 13rem;
+    background: #fff;
 }
