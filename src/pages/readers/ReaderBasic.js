@@ -97,7 +97,7 @@ const data = [
         </div>
 
         {/* 2nd Grid */}
-        <div className='second-grid'>
+        <div className='second-grid-reader'>
             <div className='country'>
                 <h5>Country of Residence</h5>
                 <div>Nigeria</div>
@@ -118,9 +118,10 @@ const data = [
         
         <div className='pie-container pie-position'>
             <div className='r-left box-left'>
-              <h2>title</h2>
-            <div className='inner-flex'>     
-                <ResponsiveContainer width="32%" height="100%">
+              <span className='pie-span span-left'>Existing Readers</span>
+              <span className='pie-span span-right'>Newly Onboarded Readers</span>
+            <div className='reader-inner-flex'>     
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data}
@@ -146,7 +147,7 @@ const data = [
                     <div className='pie-item'><span style={{backgroundColor: '#F4F0FD'}}></span>Others </div>
                 </div>
 
-                <ResponsiveContainer width="32%" height="100%">
+                <ResponsiveContainer width="23%" height="100%">
                     <PieChart width={400} height={400} className='pie-chart'>
                         <Pie
                             data={data2}
@@ -177,39 +178,39 @@ const data = [
 
             {/* Circular progress-bar */}
             <div className='r-right box-right'>
-            <h3>Stats of  Undentified Readers</h3>
-            <div className='bar-inner'>
-                      <div className='text-position'>
-                          {/* all time */}
-                            {p1 > 49 ?
-                                <div>
-                                    <ProgressBar
+                <h3 className='box-right-tag'>Stats of  Undentified Readers</h3>
+                <div className='bar-inner'>
+                        <div className='text-position'>
+                            {/* all time */}
+                                {p1 > 49 ?
+                                    <div>
+                                        <ProgressBar
+                                                radius={70}
+                                                progress={p1}
+                                                strokeWidth={8}
+                                                strokeColor="seagreen"
+                                                trackStrokeWidth={10}
+                                            />
+                                            <div className='inner-content'>
+                                                <div className='percent'>{p1}%</div>
+                                                {/* <div className='text'>All Time</div> */}
+                                            </div>
+                                    </div>
+                                    :
+                                    <div>
+                                        <ProgressBar
                                             radius={70}
                                             progress={p1}
                                             strokeWidth={8}
-                                            strokeColor="seagreen"
+                                            strokeColor="orange"
                                             trackStrokeWidth={10}
                                         />
                                         <div className='inner-content'>
                                             <div className='percent'>{p1}%</div>
-                                            <div className='text'>All Time</div>
+                                            {/* <div className='text'>All Time</div> */}
                                         </div>
-                                </div>
-                                :
-                                <div>
-                                    <ProgressBar
-                                        radius={70}
-                                        progress={p1}
-                                        strokeWidth={8}
-                                        strokeColor="orange"
-                                        trackStrokeWidth={10}
-                                    />
-                                    <div className='inner-content'>
-                                        <div className='percent'>{p1}%</div>
-                                        <div className='text'>All Time</div>
-                                    </div>
-                                </div>    
-                            }
+                                    </div>    
+                                }
                         </div>
                 </div>
             </div>
