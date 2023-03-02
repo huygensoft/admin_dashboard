@@ -24,6 +24,7 @@ $primary-color: #0E625F;
 .top-right {
   // border: 1px solid black;
   margin-right: 2rem;
+  position: relative;
 }
 .notification {
   font-size: 2.2rem;
@@ -75,4 +76,28 @@ height: 1.9rem;
     border-style: none;
     // transform: translateY(-50%);
   }
-  
+  // .drop-hidden {
+  //   display: none;
+  // }
+  .user-icon-drop-container {
+    height: 8rem;
+    width: 116px;
+    border: 1px solid rgba(253, 253, 253, 0.171);
+    background: #fff;
+    border-radius: 2px;
+    border-style: none;
+    position: absolute;
+    top: 47px;
+    left: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop-item {
+    border-bottom: 1px solid grey;
+    height: 42px;
+    padding: 9px;
+    width: 100%;
+    text-align: center;
+  }

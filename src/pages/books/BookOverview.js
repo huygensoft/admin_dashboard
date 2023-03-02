@@ -15,9 +15,9 @@ export default function BookOverview() {
         <div className='book-view-content'>
           <h1>THE PSYCHOLOGY OF MONEY</h1>
           <p>#2000</p>
-          <div className='book-view-btn'>
-            <button className='book-btn-1'>View Book</button>
-            <button className='book-btn-2'>Edit Book</button>
+          <div className='book-view-btn-container'>
+            <button className='book-btn-1 book-view-btn'>View Book</button>
+            <button className='book-btn-2 book-view-btn'>Edit Book</button>
           </div>
         </div>
       </div>

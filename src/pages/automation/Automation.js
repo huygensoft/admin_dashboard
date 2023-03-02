@@ -9,11 +9,7 @@ import Modal from './Modal';
 export default function Automation() {
   const [show, setShow] = useState(false);
 
-  // function openModal() {
-  //   modal.classList.remove('hidden');
-
-  // }
-
+  
 
   return (
     <div className='automation container'> 
@@ -47,7 +43,7 @@ export default function Automation() {
                     <p className='auto-paragraph'>Schedule a publication to occur and send to all members of this  Subscription </p>
                     <div className='auto-duration'>Jan 25, 2023 . 12:00 AM</div>
                     <div className='auto-btn-container'>
-                      <button className='auto-btn-1'>Start</button>
+                      <button className='auto-btn-1'onClick={() => setShow(true)}>Start</button>
                       <button className='auto-btn-2'>Add Subscribers</button>
                     </div>
                 </div>
@@ -58,7 +54,7 @@ export default function Automation() {
                     <p className='auto-paragraph'>Automatically Reward Writers for reaching a milestone and get them encouraged </p>
                     <div className='auto-duration'>Jan 25, 2023 . 12:00 AM</div>
                     <div className='auto-btn-container'>
-                      <button className='auto-btn-1'>Start</button>
+                      <button className='auto-btn-1' >Start</button>
                       <button className='auto-btn-2'>Add Subscribers</button>
                     </div>
                 </div>
@@ -80,7 +76,7 @@ export default function Automation() {
                     <p className='auto-paragraph'>Send Bank settlement on request/demand by user who wants it </p>
                     <div className='auto-duration'>Jan 25, 2023 . 12:00 AM</div>
                     <div className='auto-btn-container'>
-                      <button className='auto-btn-1'>Start</button>
+                      <button className='auto-btn-1' onClick={() => setShow(true)}>Start</button>
                       <button className='auto-btn-2'>Add Subscribers</button>
                     </div>
                 </div>
@@ -91,7 +87,7 @@ export default function Automation() {
                     <p className='auto-paragraph'>Automatically generate report of any type when in need </p>
                     <div className='auto-duration'>Jan 25, 2023 . 12:00 AM</div>
                     <div className='auto-btn-container'>
-                      <button className='auto-btn-1'>Start</button>
+                      <button className='auto-btn-1' onClick={() => setShow(true)}>Start</button>
                       <button className='auto-btn-2'>Add Subscribers</button>
                     </div>
                 </div>
