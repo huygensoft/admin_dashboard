@@ -3,13 +3,16 @@
 @import "grid";
 @import "../variable";
 
-body {
-    background-color: #9b98986e;
-}
 
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
 // Grid left
 .grid-left {
-    margin: 0 3.3rem;
+    margin: 0 27px;
     margin-block-start: 7rem;
 }
 // .grid-image-container {
@@ -23,16 +26,19 @@ body {
     font-weight: 400;
 }
 .grid-left-content {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-block-start: 5rem;
-    line-height: 35px;
+    line-height: 28px;
 
 }
 
 
 // Form
-
+.grid-right-form {
+    width: 100%;
+    margin-top: 28px;
+}
 .pass-label {
     margin-top: 1rem;
 }
@@ -50,14 +56,13 @@ body {
     font-weight: 600;
     font-size: 13px;
 }
-.grid-right-forgot {
+.grid-right-forgot-password {
     font-size: 0.7rem;
     font-weight: 600;
-    margin-right: 1.1rem;
     margin-top: 2rem;
     text-align: right;
 }
-.grid-right-forgot a {
+.grid-right-forgot-password a {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -65,37 +70,6 @@ body {
 
 
 // Media Queries
-/* Mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-
-    .grid-left-container, .grid-right-container {
-        height: 21rem;
-    }
-    .grid-left-container {
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-    }
-    .grid-image-container {
-        text-align: center;
-    }
-    .grid-image {
-        height: 4rem;
-    }
-    .grid-left-content {
-        font-size: 1rem;
-        margin-block-start: 2rem;
-        line-height: 26px;
-        text-align: center;
-    }
-    .grid-right-container {
-        height: 33rem;
-    }
-    .grid-right {
-        margin: 0 1rem;
-        margin-block-start: 4rem;
-    }
-}
-
 // Tablet
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .grid-left {
@@ -120,16 +94,17 @@ body {
     .grid-container {
         display: grid;
         grid-template-columns: 3fr 4fr;
-        margin: 2rem 5rem;
+        // margin: 2rem 5rem;
+        width: 60%;
     }
-    .grid-left {
-        margin: 0 2rem;
-        margin-block-start: 7rem;
-    }
-    .grid-right {
-        margin: 0 5rem;
-        margin-block-start: 9rem;
-    }
+    // .grid-left {
+    //     margin: 0 2rem;
+    //     margin-block-start: 7rem;
+    // }
+    // .grid-right {
+    //     margin: 0 5rem;
+    //     margin-block-start: 9rem;
+    // }
 }
 
 //Large Screen

@@ -9,7 +9,7 @@ import './user.scss'
 
 export default function User() {
   return (
-    <div className='container'>
+    <div>
 
         <div className='header'>
             <div className='header-left'>

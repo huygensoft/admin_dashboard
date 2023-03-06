@@ -8,11 +8,7 @@ export default function Modal(props) {
     return null
   }
 
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-    
-    
-  // }
+  
 
   function showOptions(event) {
     event.preventDefault()

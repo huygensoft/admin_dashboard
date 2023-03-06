@@ -12,7 +12,7 @@ export default function Automation() {
   
 
   return (
-    <div className='automation container'> 
+    <div className='automation'> 
         <div className='title'>
             <h3 className='title-salute'>Good Evening Faith, </h3>
             {/* <span className='title-tag'> Welcome back to your Dashboard</span> */}

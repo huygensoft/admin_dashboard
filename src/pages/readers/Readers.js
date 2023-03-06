@@ -7,7 +7,7 @@ import './reader.scss'
 
 export default function Readers() {
   return (
-    <div className='reader container'>
+    <div className='reader'>
 
         <div className='title'>
             <h3 className='title-salute'>Statistics of Readers</h3>
