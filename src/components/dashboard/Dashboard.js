@@ -13,8 +13,7 @@ import ForumIcon from '@mui/icons-material/Forum';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 
 
-// Sign-Ups
-import SignUp from '../login/SignUp'
+
 
 // Pages
 import Overview from '../../pages/overview/Overview'
@@ -113,10 +112,7 @@ function Dashboard() {
         {/* Main Board */}
         <div className='main'>
           <Routes>
-
-            {/* Sign-Ups */}
-            <Route path='/signup' element={<SignUp />} />
-
+            
             {/* Overview */}
             <Route path='/' element={<Overview />} />
 

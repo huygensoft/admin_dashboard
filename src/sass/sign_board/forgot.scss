@@ -1,85 +1,61 @@
 //IMPORTS
+@import 'grid2';
 @import "../body";
-@import "grid";
 @import "../variable";
 
-body {
-    background-color: #9b98986e;
-}
 
 
-
-// Grid left
-.grid-left {
+.forgot {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 41rem;
+    height: 85vh;
 }
-.grid-image-container {
+// Grid right
+.grid-right-forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 100%;
+}
+.grid-image-container-forgot {
     text-align: center;
 }
-.grid-image {
+.grid-image-forgot {
     height: 6rem;
 }
-.grid-image-tag {
-    font-size: 1.5rem;
+.grid-image-tag-forgot {
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 
-// Grid right
-.grid-right-container {
-    grid-column-start: 1;
-    grid-row-start: 1;
-}
-.grid-right p {
+// Grid left
+
+.grid-left-forgot-paragraph {
     font-size: 0.9rem;
     font-weight: 500;
     margin: 1.8rem 0;
 }
 
-
-
-
-// Media Queries
-/* Mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-
-    .grid-left-container, .grid-right-container {
-        height: 21rem;
-    }
-    .grid-left {
-        height: 21rem;
-    }
-    .grid-image {
-        height: 5rem;
-    }
-    .grid-left-content {
-        font-size: 1rem;
-        margin-block-start: 2rem;
-        line-height: 26px;
-        text-align: center;
-    }
-    .grid-right-container {
-        height: 33rem;
-    }
-    .grid-right {
-        margin: 0 1rem;
-        margin-block-start: 4rem;
-    }
-    h2 {
-        font-size: 1.6rem;
-    }
+// Form
+.grid-left-form-forgot {
+    width: 100%;
+}
+.input-email:hover, .input-email:focus {
+    border-width: 0;
 }
 
+// Media Queries
 // Tablet
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .grid-container {
+    .grid-container-forgot {
         display: grid;
         grid-template-columns: 6fr 4fr;
-        margin: 2rem 1rem;
+        width: 60%;
     }
-    .grid-right {
+    .grid-right-forgot {
         margin: 0 3rem;
         margin-block-start: 11rem;
     }
@@ -88,31 +64,18 @@ body {
 
 // Small Laptop
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .grid-container {
+    .grid-container-forgot {
         display: grid;
-        grid-template-columns: 6fr 4fr;
-        margin: 2rem 4rem;
-    }
-    .grid-right {
-        margin: 0 6rem;
-        margin-block-start: 11rem;
+        
+    
     }
 }
 
 // Large Screen
 @media screen and (min-width: 1440px) {
-    // Grid
-.grid-container {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    margin: 2rem 15rem;
-}
-.grid-right {
-    margin: 0 8rem;
-    margin-block-start: 11rem;
-}
-.input {
-    width: 77%;
-}
+    
+
     
 }
+
+    

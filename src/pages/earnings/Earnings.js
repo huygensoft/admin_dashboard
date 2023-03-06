@@ -17,7 +17,7 @@ export default function Earnings() {
   const p5 = 55;
 
   return (
-    <div className='earning container'> 
+    <div className='earning'> 
       <h3>Transaction History</h3>
 
     {/* Bill Infos */}

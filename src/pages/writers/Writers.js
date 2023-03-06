@@ -72,7 +72,7 @@ export default function Writers() {
   ];
   
     return (
-    <div className='writer container'>
+    <div className='writer'>
           <h2>All Writers</h2>
 
           <div className='table' >

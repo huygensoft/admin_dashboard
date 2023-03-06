@@ -12,7 +12,7 @@ import SearchSort from '../../layouts/searchSort/SearchSort'
 
 export default function Books() {
   return (
-    <div className='container'>
+    <div>
 
         <div className='title'>
             <h3 className='title-salute'>Books </h3>
