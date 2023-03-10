@@ -47,7 +47,7 @@ const columns = [
               <img src={CheckCircle} alt='btn' />
               {/* <span>Edit</span> */}
             </span>
-            <Link to='/profile'><VisibilityIcon /></Link>
+            <Link to='profile'><VisibilityIcon /></Link>
       </div>
       );
     }
