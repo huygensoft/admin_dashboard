@@ -1,11 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import '../../sass/sign_board/sign.scss'
 import booksriteWhite from '../../images/booksriteWhite.svg'
 
-export default function SignUp() {
+export default function SignUp({setUser}) {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!email || !password) return;
+        setUser({ email: email, password: password });
+        navigate('/dashboard');
+    }
+
+
   return (
     <div className="sign-up">
+        {/* <NavBar /> */}
+
         <div className="grid-container">
             <div className="grid-left-container">
                 <div className="grid-left">
@@ -24,12 +40,20 @@ export default function SignUp() {
                     <h2 className='grid-right-tag'>Sign In</h2>
 
                     {/* Form */}
-                    <form action="" className='grid-right-form'>
+                    <form action="" className='grid-right-form' onSubmit={handleSubmit}>
                         <div className="form-label">Email Address</div>
-                        <input type="email" name="" id="" placeholder="Enter Email Address" className="input"/>
+                        <input type="email" value={email} id="email" 
+                        placeholder="Enter Email Address" 
+                        className="input"
+                        onChange={(e) => setEmail(e.target.value)}
+                        />
 
                         <div className="form-label pass-label">Password</div>
-                        <input type="password" name="" id="" placeholder="Enter Password" className="input"/>
+                        <input type="password" value={password} id="password"
+                         placeholder="Enter Password" 
+                         className="input"
+                         onChange={(e) => setPassword(e.target.value)}
+                         />
                         
                         <div className="check-container">
                             <input type="checkbox" name="" id="" className="input-check"/>

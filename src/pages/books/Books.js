@@ -23,22 +23,22 @@ export default function Books() {
         <div className='book-info-container'>
             <div className='book-item'>
                 <img src={bookOne} alt='forum'/>
-                <div className='book-item-word'><Link to='/published'>Published <br /> Books</Link></div>
+                <div className='book-item-word'><Link to='published'>Published <br /> Books</Link></div>
             </div>
 
             <div className='book-item'>
                 <img src={bookFour} alt='forum'/>
-                <div className='book-item-word'><Link to='/draftbook'>Books Still In <br /> Draft</Link></div>
+                <div className='book-item-word'><Link to='draftbook'>Books Still In <br /> Draft</Link></div>
             </div>
 
             <div className='book-item'>
                 <img src={bookTwo} alt='forum'/>
-                <div className='book-item-word'><Link to='/readbook'>Most Read <br />Books</Link></div>
+                <div className='book-item-word'><Link to='readbook'>Most Read <br />Books</Link></div>
             </div>
 
             <div className='book-item'>
                 <img src={bookThree} alt='forum'/>
-                <div className='book-item-word'><Link to='/newlybook'>Newly Added <br />Books</Link></div>
+                <div className='book-item-word'><Link to='newlybook'>Newly Added <br />Books</Link></div>
             </div>
 
         </div>
