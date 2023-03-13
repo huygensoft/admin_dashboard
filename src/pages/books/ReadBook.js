@@ -55,7 +55,7 @@ const columns = [
             <img src={UnpublishIcon} alt='Unpublished btn' />
             <span>Unpublished</span>
           </span>
-          <Link to='/bookdetail'><VisibilityIcon /></Link>
+          <Link to='bookdetail'><VisibilityIcon /></Link>
         </div>
       )
     }

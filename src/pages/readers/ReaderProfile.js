@@ -8,7 +8,7 @@ import Footer from '../overview/Footer'
 export default  function ReaderProfile() {
   return (
     <div className='readerprofile container'>
-        <span className='arrow'><Link to='/writers'><img src={ArrowLeft} alt='btn'/></Link></span>
+        <span className='arrow'><Link to='../readers'><img src={ArrowLeft} alt='btn'/></Link></span>
     
         <div className='writer-detail-container'>
             <img src={User} alt='user' className='writer-detail-img'/>

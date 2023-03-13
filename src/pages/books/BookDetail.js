@@ -23,7 +23,7 @@ export default function BookDetail() {
                 know. It’s about how you behave. And behaviour is hard <br />
                 to teach, even to really smart people.
                 </p>
-                <Link to='/bookoverview'><button> See Overview</button></Link>
+                <Link to='bookoverview'><button> See Overview</button></Link>
             </div>
 
         </div>

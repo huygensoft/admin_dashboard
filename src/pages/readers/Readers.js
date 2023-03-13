@@ -18,7 +18,7 @@ export default function Readers() {
         <ProgressPie />
         <h2>Newly Registered Readers</h2>
         <ReaderTable />
-        <div><Link to={'/readertableall'} >All Readers</Link></div>
+        <div><Link to={'readertableall'} >All Readers</Link></div>
 
     </div>
   )

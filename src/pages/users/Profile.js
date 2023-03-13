@@ -13,7 +13,7 @@ export default function Profile() {
     
     return (
     <div className='profile'>
-        <span className='arrow'><Link to='/user'>
+        <span className='arrow'><Link to='../user'>
             <img src={ArrowLeft} alt='arrow'/></Link>
         </span>
 

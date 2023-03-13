@@ -62,7 +62,7 @@ export default function ReaderTableAll() {
               <img src={EditIcon} alt='edit btn' />
               <span>Edit</span>
             </span>
-            <Link to='/readerprofile'><VisibilityIcon /></Link>
+            <Link to='readerprofile'><VisibilityIcon /></Link>
           </div>
         )
       }

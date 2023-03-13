@@ -44,7 +44,7 @@ const columns = [
             <img src={EditIcon} alt='edit btn' />
             <span>Edit</span>
           </span>
-          <Link to='/draftbookdetail'><VisibilityIcon /></Link>
+          <Link to='draftbookdetail'><VisibilityIcon /></Link>
         </div>
       )
     }
