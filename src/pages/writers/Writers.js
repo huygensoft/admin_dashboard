@@ -63,7 +63,7 @@ export default function Writers() {
               <img src={EditIcon} alt='edit btn' />
               <span>Edit</span>
             </span>
-            <Link to='/writerprofile'><VisibilityIcon /></Link>
+            <Link to='writerprofile'><VisibilityIcon /></Link>
           </div>
         )
       }

@@ -32,7 +32,7 @@ const columns = [
             <img src={EditIcon} alt='btn' />
             <span>Edit</span>
           </span>
-          <Link to='/profile'><VisibilityIcon /></Link>
+          <Link to='bookoverview'><VisibilityIcon /></Link>
     </div>
     );
   }
